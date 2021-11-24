@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --brand-blue-primary: #0842b0;
+    --brand-white: #fff;
+    --brand-black: #000;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+// =================== HEADER ===================== //
+
+.container {
+    .brand-transfer {
+        width: 100%;
+        max-width: 275px;
+    }
+    max-width: 1248px;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        list-style: none;
+        gap: 2rem;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-right: 8.9rem;
+        margin-left: 19.9rem;
+        a {
+            text-decoration: none;
+            color: var(--brand-black);
+        }
+    }
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+}
+
+.btn {
+    font-size: 1.6rem;
+    max-width: 100%;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--brand-blue-primary);
+    color: var(--brand-white);
+    border-radius: 0.8rem;
+    width: 144px;
+    height: 45px;
+    margin-right: 7.9rem;
+    a {
+        text-decoration: none;
+        color: var(--brand-white);
+    }
+}
+.btn-secondary {
+    border: solid 1px var(--brand-blue-primary);
+    background: transparent;
+    color: var(--brand-black);
+    border-radius: 0.8rem;
+    width: 104px;
+    height: 45px;
+    margin-right: 3.2rem;
+    a {
+        text-decoration: none;
+        color: var(--brand-black);
+    }
+}
+
+.icon-cart {
+    width: 100%;
+    max-width: 25px;
+    cursor: pointer;
 }
