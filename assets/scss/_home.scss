@@ -1,0 +1,119 @@
+//  ============================ HERO SECTION =============================== //
+
+.hero-section {
+    background-color: $brand-yellow-70;
+    position: relative;
+    // overflow: hidden;
+    padding-top: 1.2rem;
+    padding-bottom: 4.6rem;
+}
+
+.info-hero-section {
+    padding-top: 12rem;
+    padding-bottom: 10.2rem;
+    h1 {
+        font-size: 6.2rem;
+        color: $brand-blue-primary;
+        line-height: 120%;
+        max-width: 728px;
+        margin-bottom: 2rem;
+        font-weight: $bold;
+    }
+    p {
+        font-weight: $regular;
+        color: $brand-gray-primary;
+        font-size: 2.4rem;
+        line-height: 120%;
+        max-width: 624px;
+        margin-bottom: 4rem;
+    }
+    z-index: 5;
+}
+
+.info-options-container {
+    display: flex;
+    .info-form-content {
+        z-index: 5;
+        background-color: $brand-white;
+        border-radius: 10px;
+        padding: 2rem 3.8rem 2rem 0;
+        .option {
+            display: flex;
+            flex-direction: column;
+            padding-left: 3.2rem;
+            &:nth-child(1) {
+                padding-right: 3.5rem;
+                border-right: 1px solid $brand-gray-secondary;
+            }
+            &:nth-child(2) {
+                padding-right: 6.8rem;
+                border-right: 1px solid $brand-gray-secondary;
+            }
+            &:nth-child(3) {
+                padding-right: 2.8rem;
+            }
+            label {
+                margin-bottom: 2rem;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                color: $brand-blue-primary;
+                font-weight: $bold;
+            }
+            select {
+                border: none;
+                outline: none;
+                margin-left: -3px;
+                color: $brand-gray-secondary;
+                cursor: pointer;
+            }
+        }
+        .btn-reserv {
+            background: $brand-blue-primary;
+            outline: none;
+            border: 1px solid $brand-blue-primary;
+            padding: 1rem 3.8rem;
+            // height: 45px;
+            color: $brand-white;
+            border-radius: 7px;
+            transition: 0.3s linear;
+            &:hover {
+                background: transparent;
+                border: 1px solid $brand-blue-primary;
+                color: $brand-black;
+            }
+        }
+    }
+}
+
+.scroll-bottom {
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.slider-images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            display: flex;
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
