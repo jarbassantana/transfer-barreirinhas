@@ -1,3 +1,5 @@
+@import '_keyframes.scss';
+
 //  ============================ HERO SECTION =============================== //
 
 .hero-section {
@@ -136,16 +138,108 @@
 
     .trips-item-content {
         display: flex;
-        background-color: #c4c4c4;
+        background-color: $brand-blue-primary;
         align-items: center;
-        padding: 0.4rem 0 0.4rem 0.4rem;
+        padding: 0.2rem 0 0.2rem 0.2rem;
+        border: 2px solid $brand-blue-primary;
         border-radius: 50px;
         width: 24.9rem;
         max-width: 100%;
+        transition: 0.3s ease;
 
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            background-color: $brand-white;
+        }
         p {
             text-align: center;
             width: 100%;
+            color: $brand-white;
+            &:hover {
+                color: $brand-black;
+            }
+        }
+    }
+}
+
+// ============================= DESTINOS ================================= //
+
+.destiny-container {
+    padding-top: 12rem;
+    h2 {
+        font-size: 4rem;
+        line-height: 120%;
+        color: $brand-blue-primary;
+    }
+    .destiny-subtitle {
+        font-size: 2.4rem;
+        color: $brand-gray-primary;
+        padding-top: 2rem;
+        line-height: 120%;
+    }
+    .destiny-box-content {
+        padding-top: 6rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .destiny-box-item {
+        // width: 100%;
+        position: relative;
+        overflow: hidden !important;
+
+        .overlay {
+            background-color: #000;
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            border-radius: 10px;
+            opacity: 0.5;
+        }
+
+        img {
+            width: 100%;
+            max-width: 58.4rem;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .destiny-info {
+            position: absolute;
+            bottom: 2.7rem;
+            left: 3.2rem;
+            right: auto;
+            h4 {
+                font-size: 2.4rem;
+                color: $brand-white;
+                line-height: 120%;
+                font-weight: $bold;
+            }
+            p {
+                padding-top: 1rem;
+                color: $brand-gray;
+                line-height: 150%;
+                font-weight: $regular;
+                font-size: 1.6rem;
+            }
+            a {
+                color: $brand-white;
+                text-decoration: none;
+                display: block;
+                margin-top: 2rem;
+                line-height: 150%;
+                padding: 0.8rem 2.4rem;
+                border: 2px solid $brand-blue-primary;
+                background-color: $brand-blue-primary;
+                width: 100%;
+                max-width: 14.4rem;
+                border-radius: 8px;
+                text-align: center;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
         }
     }
 }

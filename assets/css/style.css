@@ -115,6 +115,24 @@ header .brand-transfer {
   transition: 0.3s ease;
 }
 
+@-webkit-keyframes tripAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes tripAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 .hero-section {
   background-color: #fee14f;
   position: relative;
@@ -284,18 +302,123 @@ header .brand-transfer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #c4c4c4;
+  background-color: #0842b0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.4rem 0 0.4rem 0.4rem;
+  padding: 0.2rem 0 0.2rem 0.2rem;
+  border: 2px solid #0842b0;
   border-radius: 50px;
   width: 24.9rem;
   max-width: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.recent-trips-container .trips-item-content:hover, .recent-trips-container .trips-item-content:focus {
+  cursor: pointer;
+  background-color: #fff;
 }
 
 .recent-trips-container .trips-item-content p {
   text-align: center;
   width: 100%;
+  color: #fff;
+}
+
+.recent-trips-container .trips-item-content p:hover {
+  color: #000;
+}
+
+.destiny-container {
+  padding-top: 12rem;
+}
+
+.destiny-container h2 {
+  font-size: 4rem;
+  line-height: 120%;
+  color: #0842b0;
+}
+
+.destiny-container .destiny-subtitle {
+  font-size: 2.4rem;
+  color: #7a7a7a;
+  padding-top: 2rem;
+  line-height: 120%;
+}
+
+.destiny-container .destiny-box-content {
+  padding-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destiny-container .destiny-box-item {
+  position: relative;
+  overflow: hidden !important;
+}
+
+.destiny-container .destiny-box-item .overlay {
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.destiny-container .destiny-box-item img {
+  width: 100%;
+  max-width: 58.4rem;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.destiny-container .destiny-box-item .destiny-info {
+  position: absolute;
+  bottom: 2.7rem;
+  left: 3.2rem;
+  right: auto;
+}
+
+.destiny-container .destiny-box-item .destiny-info h4 {
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.destiny-container .destiny-box-item .destiny-info p {
+  padding-top: 1rem;
+  color: #e8e8e8;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.destiny-container .destiny-box-item .destiny-info a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 2rem;
+  line-height: 150%;
+  padding: 0.8rem 2.4rem;
+  border: 2px solid #0842b0;
+  background-color: #0842b0;
+  width: 100%;
+  max-width: 14.4rem;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.destiny-container .destiny-box-item .destiny-info a:hover {
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

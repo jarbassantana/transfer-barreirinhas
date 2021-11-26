@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,11 +21,13 @@
                         alt="Logo Transfer Barreirinhas"
                     />
                 </a>
-                <ul class="d-flex flex-ul">
-                    <li><a href="#">Passeios</a></li>
-                    <li><a href="#">Transfer</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
+                <nav>
+                    <ul class="d-flex flex-ul">
+                        <li><a href="#">Passeios</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
                 <div class="btn-header-container d-flex">
                     <a class="btn btn-secondary" href="#">Entrar</a>
                     <a class="btn btn-primary" href="#">Cadastre-se</a>
@@ -201,29 +203,168 @@
         </section>
 
         <section class="destiny-container container">
-            <h2>Destinos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="destiny-title">Destinos</h2>
+            <p class="destiny-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
             <div class="destiny-box-content">
-                <div class="destiny-box-item">
-                    <img src="" alt="" />
-                    <h4>Barrerinhas</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="">Lorem ipsum</a>
+                <div class="destiny-box-item" id="item-1">
+                    <span class="overlay"></span>
+                    <img
+                        src="./assets/img/destino-1.jpg"
+                        alt="imagem destino 1"
+                    />
+                    <div class="destiny-info">
+                        <h4>Barrerinhas</h4>
+                        <p>Visite os Lençóis Maranhenses</p>
+                        <a href="">Saiba Mais</a>
+                    </div>
                 </div>
-                <div class="destiny-box-item">
-                    <img src="" alt="" />
-                    <h4>Barrerinhas</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                    <a href="">Lorem ipsum</a>
+                <div class="destiny-box-item item-2">
+                    <span class="overlay"></span>
+                    <img src="./assets/img/destino-2.jpg" alt="" />
+                    <div class="destiny-info">
+                        <h4>Barrerinhas</h4>
+                        <p>São Luís - MA Conheça este lugar histórico</p>
+                        <a href="">Saiba Mais</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <section class="tours">
+            <div class="tours-container container">
+                <div class="tours-content-left">
+                    <h3>Conheça alguns dos nossos passeios</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="tours-box-slide">
+                        <div class="tours-card-item">
+                            <div class="tours-content-img">
+                                <img src="" alt="" />
+                                <p>Nome do passeio</p>
+                            </div>
+                            <div class="tours-content-info">
+                                <h4>Lorem ipsum</h4>
+                                <p>description lorem</p>
+                                <div class="t-location-container">
+                                    <span>São Luís</span>
+                                    <span>10:00</span>
+                                </div>
+                                <div class="t-price-btn">
+                                    <ul class="price-content">
+                                        <li>
+                                            <p>R$99,90</p>
+                                        </li>
+                                        <li>
+                                            <p>por adulto</p>
+                                        </li>
+                                    </ul>
+                                    <a href="">Quero ir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours-card-item">
+                            <div class="tours-content-img">
+                                <img src="" alt="" />
+                                <p>Nome do passeio</p>
+                            </div>
+                            <div class="tours-content-info">
+                                <h4>Lorem ipsum</h4>
+                                <p>description lorem</p>
+                                <div class="t-location-container">
+                                    <span>São Luís</span>
+                                    <span>10:00</span>
+                                </div>
+                                <div class="t-price-btn">
+                                    <ul class="price-content">
+                                        <li>
+                                            <p>R$99,90</p>
+                                        </li>
+                                        <li>
+                                            <p>por adulto</p>
+                                        </li>
+                                    </ul>
+                                    <a href="">Quero ir</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tours-card-item">
+                            <div class="tours-content-img">
+                                <img src="" alt="" />
+                                <p>Nome do passeio</p>
+                            </div>
+                            <div class="tours-content-info">
+                                <h4>Lorem ipsum</h4>
+                                <p>description lorem</p>
+                                <div class="t-location-container">
+                                    <span>São Luís</span>
+                                    <span>10:00</span>
+                                </div>
+                                <div class="t-price-btn">
+                                    <ul class="price-content">
+                                        <li>
+                                            <p>R$99,90</p>
+                                        </li>
+                                        <li>
+                                            <p>por adulto</p>
+                                        </li>
+                                    </ul>
+                                    <a href="">Quero ir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tours-content-right"></div>
+            </div>
+        </section>
+
+        <section class="share">
+            <div class="share-container container">
+                <img src="" alt="" />
+                <div class="share-content">
+                    <h3>#Compartilhe</h3>
+                    <h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Tempus erat purus massa amet duis. Volutpat netus
+                        placerat urna rutrum. Faucibus vel nulla tempus
+                        adipiscing eget in nisl, non. Diam, porttitor vulputate
+                        duis in aenean hendrerit duis congue. Tincidunt turpis
+                        sed cursus amet mattis euismod. Nibh sed massa tempus,
+                        ipsum at.
+                    </p>
+                    <p>
+                        At pretium maecenas eu turpis ipsum. Egestas lectus
+                        scelerisque arcu est accumsan ultrices phasellus.
+                        Quisque pretium ac egestas id nibh mattis. Orci sem
+                        eleifend lacinia sed vulputate. In massa facilisi nunc
+                        in. Et parturient accumsan, in vestibulum et est
+                        pellentesque malesuada. At suscipit a nunc at est. Enim
+                        egestas mi sollicitudin tellus convallis lectus amet.
+                        Nisl nibh at integer porttitor.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-container container">
+            <h3>
+                Digite o seu e-mail para receber novidades e passeios ineditos
+            </h3>
+            <p>
+                Digite o seu e-mail para receber novidades e passeios ineditos
+            </p>
+            <form action="">
+                <input type="email" name="" id="" />
+                <button type="submit">Lorem ipsum</button>
+            </form>
+        </section>
+
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="./assets/js/swiper.js"></script>
+        <script src="./assets/lib/swiper.js"></script>
     </body>
 </html>
