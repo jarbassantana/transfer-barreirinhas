@@ -72,15 +72,15 @@
         .btn-reserv {
             background: $brand-blue-primary;
             outline: none;
-            border: 1px solid $brand-blue-primary;
-            padding: 1rem 3.8rem;
+            border: 2px solid $brand-blue-primary;
+            padding: 0.8rem 3.6rem;
             // height: 45px;
             color: $brand-white;
             border-radius: 7px;
             transition: 0.3s linear;
             &:hover {
                 background: transparent;
-                border: 1px solid $brand-blue-primary;
+                border: 2px solid $brand-blue-primary;
                 color: $brand-black;
             }
         }
@@ -147,18 +147,17 @@
         max-width: 100%;
         transition: 0.3s ease;
 
-        &:hover,
-        &:focus {
+        &:hover {
             cursor: pointer;
-            background-color: $brand-white;
+            background-color: transparent;
+            p {
+                color: $brand-black;
+            }
         }
         p {
             text-align: center;
             width: 100%;
             color: $brand-white;
-            &:hover {
-                color: $brand-black;
-            }
         }
     }
 }

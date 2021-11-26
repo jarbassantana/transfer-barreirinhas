@@ -20,9 +20,15 @@ header {
         font-weight: 400;
         margin-right: 8.9rem;
         margin-left: 19.9rem;
-        a {
-            text-decoration: none;
-            color: $brand-black;
+        li {
+            a {
+                text-decoration: none;
+                color: $brand-black;
+                transition: 0.3s all;
+                &:hover {
+                    color: $brand-blue-primary;
+                }
+            }
         }
     }
 }
@@ -47,7 +53,7 @@ header {
     transition: 0.3s linear;
     &:hover {
         background: transparent;
-        border: 1px solid $brand-blue-primary;
+        border: 2px solid $brand-blue-primary;
         color: $brand-black;
     }
 }
@@ -71,6 +77,7 @@ header {
     max-width: 25px;
     cursor: pointer;
 
+    svg:hover,
     path:hover {
         fill: $brand-blue-primary;
         transition: 0.3s ease;

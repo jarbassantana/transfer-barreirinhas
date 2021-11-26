@@ -54,9 +54,15 @@ header .brand-transfer {
   margin-left: 19.9rem;
 }
 
-.d-flex ul a {
+.d-flex ul li a {
   text-decoration: none;
   color: #000;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.d-flex ul li a:hover {
+  color: #0842b0;
 }
 
 .btn {
@@ -82,7 +88,7 @@ header .brand-transfer {
 
 .btn-primary:hover {
   background: transparent;
-  border: 1px solid #0842b0;
+  border: 2px solid #0842b0;
   color: #000;
 }
 
@@ -109,6 +115,7 @@ header .brand-transfer {
   cursor: pointer;
 }
 
+.icon-cart svg:hover,
 .icon-cart path:hover {
   fill: #0842b0;
   -webkit-transition: 0.3s ease;
@@ -221,8 +228,8 @@ header .brand-transfer {
 .info-options-container .info-form-content .btn-reserv {
   background: #0842b0;
   outline: none;
-  border: 1px solid #0842b0;
-  padding: 1rem 3.8rem;
+  border: 2px solid #0842b0;
+  padding: 0.8rem 3.6rem;
   color: #fff;
   border-radius: 7px;
   -webkit-transition: 0.3s linear;
@@ -231,7 +238,7 @@ header .brand-transfer {
 
 .info-options-container .info-form-content .btn-reserv:hover {
   background: transparent;
-  border: 1px solid #0842b0;
+  border: 2px solid #0842b0;
   color: #000;
 }
 
@@ -315,19 +322,19 @@ header .brand-transfer {
   transition: 0.3s ease;
 }
 
-.recent-trips-container .trips-item-content:hover, .recent-trips-container .trips-item-content:focus {
+.recent-trips-container .trips-item-content:hover {
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
+}
+
+.recent-trips-container .trips-item-content:hover p {
+  color: #000;
 }
 
 .recent-trips-container .trips-item-content p {
   text-align: center;
   width: 100%;
   color: #fff;
-}
-
-.recent-trips-container .trips-item-content p:hover {
-  color: #000;
 }
 
 .destiny-container {
