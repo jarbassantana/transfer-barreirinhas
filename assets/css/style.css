@@ -72,8 +72,8 @@ header .brand-transfer {
   color: #fff;
   border-radius: 0.8rem;
   margin-right: 7.9rem;
-  padding: 1.2rem 2.9rem;
-  border: 1px solid #0842b0;
+  padding: 0.8rem 2.5rem;
+  border: 2px solid #0842b0;
   text-decoration: none;
   color: #fff;
   -webkit-transition: 0.3s linear;
@@ -87,13 +87,13 @@ header .brand-transfer {
 }
 
 .btn-secondary {
-  border: solid 1px #0842b0;
+  border: solid 2px #0842b0;
   background: transparent;
   color: #000;
   border-radius: 0.8rem;
   margin-right: 3.2rem;
   text-decoration: none;
-  padding: 1.2rem 2.9rem;
+  padding: 0.8rem 2.5rem;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }

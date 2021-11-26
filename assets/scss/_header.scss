@@ -40,8 +40,8 @@ header {
     color: $brand-white;
     border-radius: 0.8rem;
     margin-right: 7.9rem;
-    padding: 1.2rem 2.9rem;
-    border: 1px solid $brand-blue-primary;
+    padding: 0.8rem 2.5rem;
+    border: 2px solid $brand-blue-primary;
     text-decoration: none;
     color: $brand-white;
     transition: 0.3s linear;
@@ -52,13 +52,13 @@ header {
     }
 }
 .btn-secondary {
-    border: solid 1px $brand-blue-primary;
+    border: solid 2px $brand-blue-primary;
     background: transparent;
     color: $brand-black;
     border-radius: 0.8rem;
     margin-right: 3.2rem;
     text-decoration: none;
-    padding: 1.2rem 2.9rem;
+    padding: 0.8rem 2.5rem;
     transition: 0.3s linear;
     &:hover {
         color: $brand-white;
