@@ -276,11 +276,57 @@
             display: flex;
             padding-top: 4rem;
             gap: 3.2rem;
+            .tours-card-item {
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: $brand-white;
+            }
             .tours-content-img {
+                position: relative;
                 img {
                     width: 100%;
                     max-width: 23.6rem;
                     height: 100%;
+                }
+                p {
+                    display: block;
+                    position: absolute;
+                    bottom: 3px;
+                    right: 0;
+                    line-height: 120%;
+                    font-size: 1.4rem;
+                    color: $brand-white;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    padding: 0.6rem 1.3rem;
+                    border-radius: 8px 0 0 0;
+                }
+            }
+            .tours-container__info {
+                display: flex;
+
+                .tours-content-info {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+
+                    h4 {
+                        padding-top: 1.6rem;
+                        font-size: 1.8rem;
+                        line-height: 120%;
+                        font-weight: $bold;
+                        max-width: 192px;
+                        color: $brand-blue-primary;
+                        width: 100%;
+                    }
+                    .tours-content-description {
+                        font-size: 1.4rem;
+                        line-height: 150%;
+                        font-weight: $bold;
+                        color: $brand-gray-primary;
+                    }
+                }
+                .t-price-btn {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
                 }
             }
         }
