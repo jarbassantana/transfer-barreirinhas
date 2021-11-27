@@ -481,14 +481,14 @@ header .brand-transfer {
 .tours .tours-content-video {
   position: absolute;
   top: calc(50% + 1.5px);
-  right: -20%;
-  -webkit-transform: translate(-20%, -50%);
-          transform: translate(-20%, -50%);
-  width: calc(48% - 7px);
+  right: -1%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .tours .tours-content-video img {
   width: 100%;
   max-width: 49.7rem;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
