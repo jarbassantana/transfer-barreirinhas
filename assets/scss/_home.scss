@@ -287,11 +287,10 @@
 
     .tours-content-video {
         position: absolute;
-        // top: 0;
-        bottom: 0;
-        // left: 0;
-        right: 0;
-        margin: auto;
+        top: calc(50% + 1.5px);
+        right: -20%;
+        transform: translate(-20%, -50%);
+        width: calc(48% - 7px);
         img {
             width: 100%;
             max-width: 49.7rem;
