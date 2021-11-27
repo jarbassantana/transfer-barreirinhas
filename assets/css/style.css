@@ -434,7 +434,6 @@ header .brand-transfer {
   background-color: #f2f5fc;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  position: relative;
 }
 
 .tours .tours-container {
@@ -447,6 +446,7 @@ header .brand-transfer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .tours .tours-content .tours-title {
@@ -479,11 +479,8 @@ header .brand-transfer {
 }
 
 .tours .tours-content-video {
-  position: absolute;
-  top: calc(50% + 1.5px);
-  right: -1%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
+  right: -7%;
 }
 
 .tours .tours-content-video img {
