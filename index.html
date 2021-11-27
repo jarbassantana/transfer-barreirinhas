@@ -10,6 +10,8 @@
             rel="stylesheet"
             href="https://unpkg.com/swiper/swiper-bundle.min.css"
         />
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/fontawesome.min.css" /> -->
     </head>
     <body>
         <header>
@@ -47,6 +49,7 @@
                 </div>
             </div>
         </header>
+
         <section class="hero-section">
             <div class="container">
                 <div class="info-hero-section">
@@ -141,6 +144,7 @@
                 </svg>
             </div>
         </section>
+
         <section class="recent-trips-container container">
             <div class="swiper mySwiper trips-slide">
                 <div class="swiper-wrapper">
@@ -262,19 +266,29 @@
                                         Bate e volta nos Lençóis Maranhenses
                                     </h4>
                                     <p class="tours-content-description">
-                                        description lorem
+                                        Está com pouco tempo? Conheça os Lençóis
+                                        Maranhenses em apenas 1 dia saindo de
+                                        São Luís.
                                     </p>
                                     <div class="t-location-container">
-                                        <span>São Luís</span>
-                                        <span>10:00</span>
+                                        <span>
+                                            <i
+                                                class="fas fa-map-marker-alt"
+                                            ></i>
+                                            São Luís</span
+                                        >
+                                        <span
+                                            ><i class="fas fa-clock"></i
+                                            >10:00</span
+                                        >
                                     </div>
                                 </div>
                                 <div class="t-price-btn">
                                     <ul class="price-content">
-                                        <li>R$99,90</li>
+                                        <li>R$120,00</li>
                                         <li>por adulto</li>
                                     </ul>
-                                    <a href="">Quero ir</a>
+                                    <a href="#">Quero ir</a>
                                 </div>
                             </div>
                         </div>
@@ -291,19 +305,29 @@
                                 <div class="tours-content-info">
                                     <h4>São José de Ribamar e Raposa</h4>
                                     <p class="tours-content-description">
-                                        description lorem
+                                        Explore as belezas naturais das fronhas
+                                        maranhenses e conheça também o município
+                                        de São José de Ribamar.
                                     </p>
                                     <div class="t-location-container">
-                                        <span>São Luís</span>
-                                        <span>10:00</span>
+                                        <span>
+                                            <i
+                                                class="fas fa-map-marker-alt"
+                                            ></i>
+                                            São Luís</span
+                                        >
+                                        <span
+                                            ><i class="fas fa-clock"></i
+                                            >10:00</span
+                                        >
                                     </div>
                                 </div>
                                 <div class="t-price-btn">
                                     <ul class="price-content">
-                                        <li>R$99,90</li>
+                                        <li>R$120,00</li>
                                         <li>por adulto</li>
                                     </ul>
-                                    <a href="">Quero ir</a>
+                                    <a href="#">Quero ir</a>
                                 </div>
                             </div>
                         </div>
@@ -318,32 +342,56 @@
                             </div>
                             <div class="tours-container__info">
                                 <div class="tours-content-info">
-                                    <h4>Alcântara</h4>
+                                    <h4>Alcântara de São Luís - MA</h4>
                                     <p class="tours-content-description">
-                                        description lorem
+                                        Visite a cidade que parou no tempo.
+                                        Alcântara foi uma das cidades mais
+                                        importantes do Brasil no século XIX.
                                     </p>
                                     <div class="t-location-container">
-                                        <span>São Luís</span>
-                                        <span>10:00</span>
+                                        <span>
+                                            <i
+                                                class="fas fa-map-marker-alt"
+                                            ></i>
+                                            São Luís</span
+                                        >
+                                        <span
+                                            ><i class="fas fa-clock"></i
+                                            >10:00</span
+                                        >
                                     </div>
                                 </div>
                                 <div class="t-price-btn">
                                     <ul class="price-content">
-                                        <li>R$99,90</li>
+                                        <li>R$230,00</li>
                                         <li>por adulto</li>
                                     </ul>
-                                    <a href="">Quero ir</a>
+                                    <a href="#">Quero ir</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <a class="btn-ver-todos" href="#">Ver todos</a>
                 </div>
                 <div class="tours-content-video">
+                    <div class="tours-overlay"></div>
                     <img
                         loading="lazy"
                         src="./assets/img/video.jpg"
                         alt="imagem video"
                     />
+                    <svg
+                        width="96"
+                        height="96"
+                        viewBox="0 0 96 96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M52.75 0.737578V10.2376C73.6025 12.8026 88.375 31.7551 85.8101 52.6076C83.625 69.8976 70.04 83.6251 52.75 85.6676V95.1676C78.875 92.5551 97.8751 69.3751 95.2626 43.2501C93.1251 20.6876 75.2175 2.87508 52.75 0.642578V0.737578ZM17.9325 84.7651C25.1278 90.7629 33.9366 94.498 43.25 95.5001V86.0001C36.4927 85.1263 30.0945 82.4522 24.725 78.2576L17.9325 84.7651ZM24.725 18.2651C30.045 13.9901 36.4576 11.2351 43.25 10.2851V0.785078C33.9875 1.68758 25.1525 5.25008 17.9325 11.2351L24.725 18.2651ZM18.0275 24.7251L11.2351 17.9326C5.29591 25.14 1.64101 33.9547 0.737549 43.2501H10.2375C11.14 36.5051 13.8 30.0926 18.0275 24.7251ZM10.285 52.7501H0.785049C1.73505 62.0601 5.39255 70.8476 11.2825 78.0676L18.0275 71.2751C13.833 65.9057 11.1588 59.5074 10.285 52.7501ZM38.5 69.3751L67 48.0001L38.5 26.6251V69.3751Z"
+                            fill="white"
+                        />
+                    </svg>
                 </div>
             </div>
         </section>
