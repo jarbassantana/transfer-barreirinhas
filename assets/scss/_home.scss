@@ -166,6 +166,7 @@
 
 .destiny-container {
     padding-top: 12rem;
+    padding-bottom: 12rem;
     h2 {
         font-size: 4rem;
         line-height: 120%;
@@ -239,6 +240,61 @@
                     background-color: transparent;
                 }
             }
+        }
+    }
+}
+
+//  ============================= PASSEIOS ================================ //
+
+.tours {
+    background-color: #f2f5fc;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    position: relative;
+    .tours-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tours-content {
+        .tours-title {
+            color: $brand-blue-primary;
+            font-size: 3.2rem;
+            font-weight: $bold;
+            line-height: 120%;
+        }
+        .tours-subtitle {
+            padding-top: 2rem;
+            color: $brand-gray-primary;
+            font-size: 1.6rem;
+            font-weight: $bold;
+            line-height: 120%;
+        }
+        .tours-box-slide {
+            display: flex;
+            padding-top: 4rem;
+            gap: 3.2rem;
+            .tours-content-img {
+                img {
+                    width: 100%;
+                    max-width: 23.6rem;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .tours-content-video {
+        position: absolute;
+        // top: 0;
+        bottom: 0;
+        // left: 0;
+        right: 0;
+        margin: auto;
+        img {
+            width: 100%;
+            max-width: 49.7rem;
         }
     }
 }

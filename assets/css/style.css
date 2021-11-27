@@ -339,6 +339,7 @@ header .brand-transfer {
 
 .destiny-container {
   padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .destiny-container h2 {
@@ -427,5 +428,65 @@ header .brand-transfer {
 
 .destiny-container .destiny-box-item .destiny-info a:hover {
   background-color: transparent;
+}
+
+.tours {
+  background-color: #f2f5fc;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  position: relative;
+}
+
+.tours .tours-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tours .tours-content .tours-title {
+  color: #0842b0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.tours .tours-content .tours-subtitle {
+  padding-top: 2rem;
+  color: #7a7a7a;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.tours .tours-content .tours-box-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 4rem;
+  gap: 3.2rem;
+}
+
+.tours .tours-content .tours-box-slide .tours-content-img img {
+  width: 100%;
+  max-width: 23.6rem;
+  height: 100%;
+}
+
+.tours .tours-content-video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.tours .tours-content-video img {
+  width: 100%;
+  max-width: 49.7rem;
 }
 /*# sourceMappingURL=style.css.map */
