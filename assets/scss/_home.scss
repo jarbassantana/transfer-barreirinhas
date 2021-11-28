@@ -1,4 +1,6 @@
-@import '_keyframes.scss';
+//  ============================ IMPORT HEADER =============================== //
+
+@import '_header';
 
 //  ============================ HERO SECTION =============================== //
 
@@ -443,3 +445,49 @@
         }
     }
 }
+
+//  ============================== COMPARTILHE =============================== //
+
+.share {
+    .share-container {
+        display: flex;
+        justify-content: center;
+        gap: 10.9rem;
+        padding-top: 12rem;
+        padding-bottom: 7.4rem;
+        // align-items: center;
+        .share-content {
+            h3 {
+                padding-top: 4.6rem;
+                color: $brand-blue-primary;
+                font-size: 3.2rem;
+                line-height: 120%;
+                font-weight: $bold;
+            }
+            h5 {
+                color: $brand-gray-primary;
+                font-size: 2rem;
+                line-height: 120%;
+                font-weight: $regular;
+                padding-top: 2rem;
+            }
+            :nth-child(3) {
+                padding-top: 4rem;
+            }
+            :nth-child(4) {
+                padding-top: 2.4rem;
+            }
+            p {
+                font-size: 1.6rem;
+                line-height: 150%;
+                max-width: 52.1rem;
+                color: $brand-gray-primary;
+            }
+        }
+    }
+}
+
+// ================================== IMPORT NEWSLETTER ================================== //
+@import '_newsletter';
+// ================================== IMPORT FOOTER ================================== //
+@import '_footer';

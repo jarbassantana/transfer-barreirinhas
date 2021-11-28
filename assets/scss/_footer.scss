@@ -1,0 +1,86 @@
+// ================================= Footer ================================= //
+
+.rodape {
+    padding-top: 12rem;
+}
+
+.rodape-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0;
+    .rodape-content-card {
+        p {
+            font-size: 1.4rem;
+            color: $brand-gray-primary;
+            max-width: 27.5rem;
+            width: 100%;
+        }
+        ul {
+            list-style: none;
+            padding-top: 2.4rem;
+        }
+
+        .rodape-subtitle {
+            padding-top: 2rem;
+        }
+        .rodape-social-content {
+            display: flex;
+            gap: 2rem;
+            padding-top: 1.6rem;
+            a {
+                color: $brand-gray-primary;
+                font-size: 3rem;
+                transition: 0.3s ease;
+                &:hover {
+                    color: $brand-blue-primary;
+                }
+            }
+        }
+
+        .rodape-container-pagamento {
+            padding-top: 2.4rem;
+
+            ul {
+                padding-top: 1rem;
+                max-width: 20rem;
+                width: 100%;
+            }
+        }
+        .rodape-links-uteis {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .rodape-contato {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            color: $brand-gray-primary;
+            word-break: break-all;
+            justify-content: center;
+            i {
+                padding-right: 0.8rem;
+            }
+        }
+    }
+
+    .rodape-content-pagamento {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+        h3 {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.copyright-container {
+    p {
+        border-top: 1px solid $brand-gray;
+        padding: 3.2rem 0;
+        font-size: 1.4rem;
+        color: $brand-gray-primary;
+        width: 100%;
+        text-align: center;
+    }
+}

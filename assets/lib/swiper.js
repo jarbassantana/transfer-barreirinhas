@@ -37,6 +37,7 @@ var tripSwiper = new Swiper('.trips-slide', {
         }
     }
 })
+
 const trip = document.querySelector('.trips-slide')
 ;['mouseenter', 'mouseleave'].forEach(useEvent => {
     trip.addEventListener(useEvent, handlePlay)
@@ -48,3 +49,9 @@ function handlePlay(event) {
         this.swiper.autoplay.start()
     }
 }
+var toursSwiper = new Swiper('.tours-slide__load', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
+})
