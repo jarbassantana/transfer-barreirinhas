@@ -1,0 +1,74 @@
+.login {
+    padding: 12rem 0;
+}
+
+.login-container {
+    background-color: $brand-blue-secondary;
+    max-width: 41rem;
+    padding: 3.2rem 5.2rem;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(232, 232, 232, 0.15);
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.25);
+    img {
+        width: 100%;
+        max-width: 27.5rem;
+    }
+
+    .login-container-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        .input-content-email {
+            margin-top: 4rem;
+            margin-bottom: 3.2rem;
+        }
+        input {
+            font-size: 1.6rem;
+            padding: 1.8rem 0 1.8rem 3.2rem;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Lato', sans-serif;
+            font-weight: $bold;
+            color: $brand-gray-primary;
+            background-color: $brand-gray;
+        }
+        span {
+            padding-top: 1rem;
+            display: block;
+            text-align: end;
+            width: 100%;
+            font-weight: $bold;
+            a {
+                text-decoration: none;
+                color: $brand-blue-primary;
+
+                &:hover {
+                    color: $brand-black;
+                }
+            }
+        }
+        button {
+            width: 100%;
+            margin-top: 3.2rem;
+            border: 2px solid $brand-yellow-70;
+            padding: 1.8rem;
+            font-size: 2rem;
+            background-color: $brand-yellow-70;
+            font-family: 'Lato', sans-serif;
+            border-radius: 8px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s all;
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $brand-blue-primary;
+            }
+        }
+    }
+}

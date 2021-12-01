@@ -11,6 +11,18 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+@media (max-width: 1438px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
 body {
   font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
@@ -139,7 +151,7 @@ header .brand-transfer {
   font-size: 6.2rem;
   color: #0842b0;
   line-height: 120%;
-  max-width: 728px;
+  max-width: 72.8rem;
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -149,7 +161,7 @@ header .brand-transfer {
   color: #7a7a7a;
   font-size: 2.4rem;
   line-height: 120%;
-  max-width: 624px;
+  max-width: 62.4rem;
   margin-bottom: 4rem;
 }
 
@@ -202,7 +214,7 @@ header .brand-transfer {
 .info-options-container .info-form-content .option select {
   border: none;
   outline: none;
-  margin-left: -3px;
+  margin-left: -0.3rem;
   color: #545454;
   cursor: pointer;
 }
@@ -245,7 +257,7 @@ header .brand-transfer {
   right: 0;
   width: 40%;
   height: 100%;
-  max-width: 900px;
+  max-width: 90rem;
 }
 
 .slider-images .swiper {
@@ -475,7 +487,7 @@ header .brand-transfer {
 .tours .tours-content .tours-box-slide .tours-content-img p {
   display: block;
   position: absolute;
-  bottom: 3px;
+  bottom: 0.3rem;
   right: 0;
   line-height: 120%;
   font-size: 1.4rem;
@@ -896,5 +908,90 @@ header .brand-transfer {
   color: #7a7a7a;
   width: 100%;
   text-align: center;
+}
+
+.login {
+  padding: 12rem 0;
+}
+
+.login-container {
+  background-color: #f2f5fc;
+  max-width: 41rem;
+  padding: 3.2rem 5.2rem;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(232, 232, 232, 0.15);
+  -webkit-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.25);
+}
+
+.login-container img {
+  width: 100%;
+  max-width: 27.5rem;
+}
+
+.login-container .login-container-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-container form .input-content-email {
+  margin-top: 4rem;
+  margin-bottom: 3.2rem;
+}
+
+.login-container form input {
+  font-size: 1.6rem;
+  padding: 1.8rem 0 1.8rem 3.2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #7a7a7a;
+  background-color: #e8e8e8;
+}
+
+.login-container form span {
+  padding-top: 1rem;
+  display: block;
+  text-align: end;
+  width: 100%;
+  font-weight: 700;
+}
+
+.login-container form span a {
+  text-decoration: none;
+  color: #0842b0;
+}
+
+.login-container form span a:hover {
+  color: #000;
+}
+
+.login-container form button {
+  width: 100%;
+  margin-top: 3.2rem;
+  border: 2px solid #fee14f;
+  padding: 1.8rem;
+  font-size: 2rem;
+  background-color: #fee14f;
+  font-family: 'Lato', sans-serif;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.login-container form button:hover {
+  background-color: transparent;
+  border: 2px solid #0842b0;
 }
 /*# sourceMappingURL=style.css.map */

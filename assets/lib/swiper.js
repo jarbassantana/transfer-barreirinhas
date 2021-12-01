@@ -49,7 +49,14 @@ function handlePlay(event) {
         this.swiper.autoplay.start()
     }
 }
-var toursSwiper = new Swiper('.tours-slide__load', {
+// var toursSwiper = new Swiper('.tours-slide__load', {
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev'
+//     }
+// })
+
+var swiper = new Swiper('.mySwiperTours', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
