@@ -57,6 +57,7 @@ function handlePlay(event) {
 // })
 
 var swiper = new Swiper('.mySwiperTours', {
+    slidesPerView: 3,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
