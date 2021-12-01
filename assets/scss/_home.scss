@@ -260,7 +260,7 @@
 
     .tours-slide-container {
         width: 100%;
-        max-width: 76.8rem;
+        max-width: 79rem;
     }
 
     .tours-content {
@@ -432,7 +432,8 @@
 
     .tours-content-video {
         position: relative;
-        right: -7%;
+        right: -6%;
+        display: flex;
         .thumb-video {
             box-sizing: border-box;
             max-width: 49rem;
@@ -449,7 +450,6 @@
             bottom: 0;
             left: 0;
             border-radius: 10px;
-            max-height: 32rem;
         }
         svg {
             position: absolute;

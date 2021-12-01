@@ -11,7 +11,7 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 1438px) {
+@media (max-width: 1477px) {
   html {
     font-size: 57%;
   }
@@ -444,7 +444,7 @@ header .brand-transfer {
 
 .tours .tours-slide-container {
   width: 100%;
-  max-width: 76.8rem;
+  max-width: 79rem;
 }
 
 .tours .tours-content .tours-title {
@@ -667,7 +667,10 @@ header .brand-transfer {
 
 .tours .tours-content-video {
   position: relative;
-  right: -7%;
+  right: -6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .tours .tours-content-video .thumb-video {
@@ -689,7 +692,6 @@ header .brand-transfer {
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  max-height: 32rem;
 }
 
 .tours .tours-content-video svg {
@@ -1008,5 +1010,33 @@ header .brand-transfer {
 .login-container form button:hover {
   background-color: transparent;
   border: 2px solid #0842b0;
+}
+
+@media (max-width: 1366px) {
+  .tours .tours-slide-container {
+    width: 100%;
+    max-width: 63rem;
+  }
+  .tours .tours-content-video {
+    position: relative;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tours .tours-slide-container {
+    width: 100%;
+    max-width: 57rem;
+  }
+  .tours .tours-content-video {
+    position: relative;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

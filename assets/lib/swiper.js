@@ -66,8 +66,8 @@ var toursSwiper = new Swiper('.mySwiperTours', {
             slidesPerView: 1.9,
             spaceBetween: 32
         },
-        807: {
-            slidesPerView: 2,
+        1200: {
+            slidesPerView: 2.3,
             spaceBetween: 32
         },
         1366: {
@@ -76,12 +76,13 @@ var toursSwiper = new Swiper('.mySwiperTours', {
             centeredSlides: false
         },
         1440: {
-            slidesPerView: 3,
+            slidesPerView: 3.2,
             spaceBetween: 32
         }
     },
     slidesPerView: 3,
     loop: true,
     spaceBetween: 30,
-    centeredSlides: false
+    centeredSlides: false,
+    grabCursor: true
 })

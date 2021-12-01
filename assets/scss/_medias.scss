@@ -1,0 +1,29 @@
+// ================================== PASSEIO =============================== //
+
+@media (max-width: 1366px) {
+    .tours {
+        .tours-slide-container {
+            width: 100%;
+            max-width: 63rem;
+        }
+        .tours-content-video {
+            position: relative;
+            right: 0;
+            display: flex;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .tours {
+        .tours-slide-container {
+            width: 100%;
+            max-width: 57rem;
+        }
+        .tours-content-video {
+            position: relative;
+            right: 0;
+            display: flex;
+        }
+    }
+}
