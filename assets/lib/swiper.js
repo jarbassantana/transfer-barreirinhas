@@ -49,17 +49,39 @@ function handlePlay(event) {
         this.swiper.autoplay.start()
     }
 }
-// var toursSwiper = new Swiper('.tours-slide__load', {
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev'
-//     }
-// })
-
-var swiper = new Swiper('.mySwiperTours', {
-    slidesPerView: 3,
+var toursSwiper = new Swiper('.tours-slide__load', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     }
+})
+
+var toursSwiper = new Swiper('.mySwiperTours', {
+    breakpoints: {
+        320: {
+            slidesPerView: 1.5,
+            spaceBetween: 16
+        },
+        481: {
+            slidesPerView: 1.9,
+            spaceBetween: 32
+        },
+        807: {
+            slidesPerView: 2,
+            spaceBetween: 32
+        },
+        1366: {
+            slidesPerView: 2.5,
+            spaceBetween: 32,
+            centeredSlides: false
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 32
+        }
+    },
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: false
 })

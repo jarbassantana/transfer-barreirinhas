@@ -430,7 +430,7 @@ header .brand-transfer {
   padding-bottom: 12rem;
 }
 
-.tours .tours-container {
+.tours .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +440,11 @@ header .brand-transfer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+}
+
+.tours .tours-slide-container {
+  width: 100%;
+  max-width: 76.8rem;
 }
 
 .tours .tours-content .tours-title {
@@ -464,14 +468,25 @@ header .brand-transfer {
   display: flex;
   padding-top: 4rem;
   gap: 2.4rem;
+  cursor: pointer;
 }
 
 .tours .tours-content .tours-box-slide .tours-card-item {
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
-  -webkit-filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.2));
+}
+
+.tours .tours-content .tours-box-slide .swiper-button-next:after,
+.tours .tours-content .tours-box-slide .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 1.6rem;
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  font-weight: bold;
+  line-height: 1;
 }
 
 .tours .tours-content .tours-box-slide .tours-content-img {
