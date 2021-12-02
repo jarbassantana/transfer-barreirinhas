@@ -1,6 +1,7 @@
 var swiper = new Swiper('.slide-hero__swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
+    grabCursor: true,
     pagination: {
         el: '.slider-images .swiper-pagination',
         clickable: true
@@ -62,12 +63,16 @@ var toursSwiper = new Swiper('.mySwiperTours', {
             slidesPerView: 1.5,
             spaceBetween: 16
         },
-        481: {
-            slidesPerView: 1.9,
+        990: {
+            slidesPerView: 3.3,
             spaceBetween: 32
         },
-        1200: {
-            slidesPerView: 2.3,
+        1120: {
+            slidesPerView: 1.5,
+            spaceBetween: 32
+        },
+        1150: {
+            slidesPerView: 2.2,
             spaceBetween: 32
         },
         1366: {

@@ -21,12 +21,30 @@ header {
         margin-right: 8.9rem;
         margin-left: 19.9rem;
         li {
+            position: relative;
             a {
                 text-decoration: none;
                 color: $brand-black;
                 transition: 0.3s all;
-                &:hover {
+                padding: 1rem 0;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 0%;
+                bottom: -0.6rem;
+                height: 0.2rem;
+                background-color: $brand-blue-primary;
+                transition: 0.5s ease;
+            }
+
+            &:hover {
+                a {
                     color: $brand-blue-primary;
+                }
+                &::after {
+                    width: 100%;
                 }
             }
         }

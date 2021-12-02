@@ -35,6 +35,257 @@ body {
   padding: 0 1.5rem;
 }
 
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@-webkit-keyframes slideOut {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+  }
+}
+
+@media (max-width: 1290px) {
+  header .navbar-desktop {
+    display: none;
+  }
+}
+
+header .navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 1290px) {
+  header .navbar-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.2rem;
+  }
+}
+
+header .bx {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .bx::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 0.2rem;
+  top: 40%;
+  left: 17%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #0842b0;
+}
+
+header .bx::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 0.2rem;
+  top: 64%;
+  left: 17%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background-color: #0842b0;
+}
+
+header .active-bx {
+  width: 3.6rem;
+  height: 3.6rem;
+  position: relative;
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header .active-bx::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 0.2rem;
+  top: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  left: 17%;
+  background-color: #0842b0;
+}
+
+header .active-bx::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 0.2rem;
+  top: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  left: 17%;
+  background-color: #0842b0;
+}
+
+header .logo {
+  z-index: 9;
+}
+
+header .logo img {
+  width: 100%;
+  max-width: 27.5rem;
+}
+
+header .menu-mobile {
+  display: none;
+  -webkit-animation: slideOut 1s ease;
+          animation: slideOut 1s ease;
+}
+
+@media (max-width: 1290px) {
+  header .menu-mobile {
+    display: none;
+  }
+}
+
+header .active-menu-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  background-color: #f2f5fc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate3d(0, -10rem, 0);
+          transform: translate3d(0, -10rem, 0);
+  -webkit-animation: slideIn 1s ease;
+          animation: slideIn 1s ease;
+}
+
+header .active-menu-mobile .nav-list-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+header .active-menu-mobile .nav-link-mobile {
+  display: inline-block;
+  padding: 1.6rem 2.4rem;
+  font-size: 3.2rem;
+  color: #545454;
+  position: relative;
+}
+
+header .active-menu-mobile .nav-link-mobile::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: -0.1rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  left: 2.4rem;
+  height: 0.3rem;
+  background-color: #0842b0;
+}
+
+header .active-menu-mobile .nav-link-mobile:hover::after {
+  width: 100%;
+}
+
+header .active-menu-mobile .btn-container-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2.4rem 0;
+}
+
+header .active-menu-mobile .btn-container-mobile .btn-secondary,
+header .active-menu-mobile .btn-container-mobile .btn-primary {
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+header .active-menu-mobile a {
+  text-decoration: none;
+}
+
 header {
   padding: 1.2rem 0;
 }
@@ -66,15 +317,36 @@ header .brand-transfer {
   margin-left: 19.9rem;
 }
 
+.d-flex ul li {
+  position: relative;
+}
+
 .d-flex ul li a {
   text-decoration: none;
   color: #000;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  padding: 1rem 0;
 }
 
-.d-flex ul li a:hover {
+.d-flex ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0%;
+  bottom: -0.6rem;
+  height: 0.2rem;
+  background-color: #0842b0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.d-flex ul li:hover a {
   color: #0842b0;
+}
+
+.d-flex ul li:hover::after {
+  width: 100%;
 }
 
 .btn {
@@ -286,6 +558,8 @@ header .brand-transfer {
 .slider-images .img-width {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .recent-trips-container {
@@ -1015,7 +1289,7 @@ header .brand-transfer {
 @media (max-width: 1366px) {
   .tours .tours-slide-container {
     width: 100%;
-    max-width: 63rem;
+    max-width: 57rem;
   }
   .tours .tours-content-video {
     position: relative;
@@ -1026,10 +1300,10 @@ header .brand-transfer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
   .tours .tours-slide-container {
     width: 100%;
-    max-width: 57rem;
+    max-width: 55rem;
   }
   .tours .tours-content-video {
     position: relative;
@@ -1037,6 +1311,75 @@ header .brand-transfer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (max-width: 1120px) {
+  .tours .tours-slide-container {
+    width: 100%;
+    max-width: 35rem;
+  }
+  .tours .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 6.2rem;
+  }
+  .tours .tours-content-video {
+    position: relative;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider-images {
+    position: static;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    padding-bottom: 3.2rem;
+  }
+  .scroll-bottom-container {
+    padding: 1.6rem 2.4rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .tours .tours-slide-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tours .tours-box-slide {
+    max-width: 85rem;
+    width: 100%;
+  }
+  .tours .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 6.2rem;
+  }
+  .tours .tours-content-video {
+    position: relative;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 90%;
+  }
+  .tours .tours-content-video .thumb-video {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
