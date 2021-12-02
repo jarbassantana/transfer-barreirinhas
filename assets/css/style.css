@@ -547,13 +547,16 @@ header .brand-transfer {
 }
 
 .scroll-bottom {
-  margin: auto;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .scroll-bottom:hover {
