@@ -836,7 +836,7 @@ header .brand-transfer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 23.1rem;
+  width: 100%;
 }
 
 .tours .tours-content .tours-box-slide .tours-container__info .tours-content-info {
@@ -1435,6 +1435,9 @@ header .brand-transfer {
   .tours .tours-slide-container .tours-box-slide .tours-content-img img {
     width: 100%;
     max-width: none;
+  }
+  .tours .tours-slide-container .tours-box-slide .tours-container__info {
+    width: 100%;
   }
   .tours .tours-content-video svg {
     width: 100%;
