@@ -59,9 +59,21 @@ var toursSwiper = new Swiper('.tours-slide__load', {
 
 var toursSwiper = new Swiper('.mySwiperTours', {
     breakpoints: {
-        320: {
+        390: {
+            slidesPerView: 1.2,
+            spaceBetween: 16
+        },
+        530: {
             slidesPerView: 1.5,
             spaceBetween: 16
+        },
+        660: {
+            slidesPerView: 2,
+            spaceBetween: 32
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 32
         },
         990: {
             slidesPerView: 3.3,
