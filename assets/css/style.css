@@ -328,7 +328,7 @@ header .brand-transfer {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 400;
-  margin-left: 27.4rem;
+  margin-left: 12.7rem;
   font-weight: 700;
 }
 
@@ -345,7 +345,7 @@ header .brand-transfer {
 }
 
 .d-flex ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 0%;
@@ -416,7 +416,7 @@ header .brand-transfer {
 }
 
 .icon-cart::before {
-  content: '0';
+  content: "0";
   position: absolute;
   color: #fff;
   background-color: #0842b0;
@@ -1355,6 +1355,24 @@ header .brand-transfer {
   }
   .share .share-container {
     gap: 3.2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .share .share-container img {
+    max-width: 47.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .share .share-container .share-content p {
+    max-width: 100%;
   }
 }
 
@@ -1392,9 +1410,49 @@ header .brand-transfer {
   .share .share-container img {
     max-width: 47.9rem;
   }
+  .newsletter .newsletter-container {
+    padding: 9.4rem 2.4rem;
+  }
+  .newsletter .newsletter-container h3 {
+    font-size: 3.2rem;
+  }
+  .newsletter .newsletter-container p {
+    font-size: 1.6rem;
+  }
+  .newsletter .newsletter-container form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  .newsletter .newsletter-container form input {
+    padding: 1.6rem 2.4rem;
+    border-radius: 8px;
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .newsletter .newsletter-container form button {
+    padding: 1.4rem 2.4rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    border-radius: 8px;
+  }
+  .rodape-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2.4rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .info-hero-section {
+    padding-top: 4.8rem;
+  }
   .tours .tours-slide-container {
     width: 100%;
     max-width: none;
@@ -1427,6 +1485,13 @@ header .brand-transfer {
   .tours .tours-slide-container .tours-box-slide {
     max-width: 35rem;
   }
+  .rodape-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2.4rem;
+  }
 }
 
 @media (max-width: 390px) {
@@ -1446,6 +1511,13 @@ header .brand-transfer {
   .tours .tours-content-video svg {
     width: 100%;
     max-width: 6rem;
+  }
+  .newsletter .newsletter-container {
+    padding: 4.8rem 2.4rem;
+  }
+  .newsletter .newsletter-container form input {
+    width: 100%;
+    font-size: 1.2rem;
   }
 }
 

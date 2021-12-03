@@ -1,9 +1,6 @@
-// MENU MOBILE
-// function MenuMobile() {
-//     const showMenu = document.getElementById('bx')
-//     showMenu.
-// }
-
+const scrollBtn = document.querySelector(
+    '.scroll-bottom-container a[href^="#"]'
+)
 function initMenuMobile(event) {
     const showMenu = document.getElementById('bx')
     const menuMobile = document.getElementById('menu-mobile')
@@ -13,12 +10,16 @@ function initMenuMobile(event) {
     })
 }
 
-function verifiedClass() {
-    const menuMobile = document.getElementById('menu-mobile')
-    const classContain = menuMobile.classList.contains('active-menu-mobile')
-    if (classContain && window.innerWidth > 1290) {
-        menuMobile.classList.remove('active-menu-mobile')
-    }
+function initScrollTop(event) {
+    event.preventDefault()
+    const href = event.currentTarget.getAttribute('href')
+    const section = document.querySelector(href)
+    const topo = section.offsetTop
+    window.scrollTo({
+        top: topo,
+        behavior: 'smooth'
+    })
 }
+scrollBtn.addEventListener('click', initScrollTop)
 
 initMenuMobile('click')

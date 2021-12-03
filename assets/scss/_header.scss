@@ -19,7 +19,7 @@ header {
         font-size: 1.4rem;
         font-weight: 400;
         // margin-right: 8.9rem;
-        margin-left: 27.4rem;
+        margin-left: 12.7rem;
         font-weight: $bold;
         li {
             position: relative;
@@ -30,7 +30,7 @@ header {
                 padding: 1rem 0;
             }
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 width: 0%;
@@ -99,7 +99,7 @@ header {
     position: relative;
 
     &::before {
-        content: '0';
+        content: "0";
         position: absolute;
         color: $brand-white;
         background-color: $brand-blue-primary;
