@@ -1,3 +1,7 @@
+//  ============================ IMPORT HEADER =============================== //
+
+@import "_header";
+
 .login {
     padding: 12rem 0;
 }
@@ -33,7 +37,7 @@
             outline: none;
             border: none;
             border-radius: 8px;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             font-weight: $bold;
             color: $brand-gray-primary;
             background-color: $brand-gray;
@@ -60,7 +64,7 @@
             padding: 1.8rem;
             font-size: 2rem;
             background-color: $brand-yellow-70;
-            font-family: 'Lato', sans-serif;
+            font-family: "Lato", sans-serif;
             border-radius: 8px;
             text-transform: uppercase;
             cursor: pointer;
@@ -72,3 +76,9 @@
         }
     }
 }
+
+// ================================== IMPORT FOOTER ================================== //
+@import "_footer";
+
+// ================================== MEDIA QUERIES - HOME =============================== //
+@import "_mixins";
