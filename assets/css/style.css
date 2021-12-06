@@ -2338,6 +2338,7 @@ header .brand-transfer {
           box-sizing: border-box;
   -webkit-filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
           filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
+  border: 1px solid red;
 }
 
 .br-passeios-card .br-passeios-img-content {
@@ -2704,6 +2705,70 @@ header .brand-transfer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1189px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1060px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 1060px) {
+  .br-passeios-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    justify-items: center;
+    grid-auto-flow: row;
+  }
+}
+
+@media (max-width: 800px) {
+  .br-passeios-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 3.2rem;
+    justify-items: center;
+    grid-auto-flow: row;
+  }
+}
+
+@media (max-width: 410px) {
+  .br-passeios-card .br-passeios-content-card {
+    padding: 2rem 2rem;
+    background-color: #f2f5fc;
+  }
+  .br-passeios-card .br-passeios-content-card .br-passeios__s-l span {
+    font-size: 1.4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 120%;
+  }
+  .br-passeios-content .br-passeios-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .br-passeios-content .br-passeios-btns .br-btn-primario,
+  .br-passeios-content .br-passeios-btns .br-btn-secundario {
+    margin-top: 1.6rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

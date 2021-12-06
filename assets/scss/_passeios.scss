@@ -71,6 +71,7 @@
     overflow: hidden;
     box-sizing: border-box;
     filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
+    border: 1px solid red;
 
     .br-passeios-img-content {
         position: relative;
@@ -215,3 +216,61 @@
 
 // ================================== IMPORT FOOTER ================================== //
 @import "_footer";
+
+html {
+    @include responsive(1189px) {
+        font-size: 55%;
+    }
+    @include responsive(1060px) {
+        font-size: 62.5%;
+    }
+}
+@include responsive(1060px) {
+    .br-passeios-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3.2rem;
+        justify-items: center;
+        grid-auto-flow: row;
+    }
+}
+@include responsive(800px) {
+    .br-passeios-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3.2rem;
+        justify-items: center;
+        grid-auto-flow: row;
+    }
+}
+
+@include responsive(410px) {
+    .br-passeios-card {
+        .br-passeios-content-card {
+            padding: 2rem 2rem;
+            background-color: #f2f5fc;
+        }
+    }
+    .br-passeios-card {
+        .br-passeios-content-card {
+            .br-passeios__s-l {
+                span {
+                    font-size: 1.4rem;
+                    align-items: center;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+    .br-passeios-content {
+        .br-passeios-btns {
+            display: flex;
+            flex-direction: column;
+            .br-btn-primario,
+            .br-btn-secundario {
+                margin-top: 1.6rem;
+                text-align: center;
+            }
+        }
+    }
+}
