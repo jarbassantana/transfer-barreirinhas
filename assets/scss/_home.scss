@@ -665,7 +665,39 @@
 
 @include responsive(768px) {
     .info-hero-section {
-        padding-top: 4.8rem;
+        padding-top: 3.2rem;
+        h1 {
+            text-align: center;
+            font-size: 3.2rem;
+        }
+        p {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+    .info-options-container {
+        .info-form-content {
+            gap: 3.2rem;
+        }
+    }
+    .destiny-container {
+        h2 {
+            font-size: 3.2rem;
+            line-height: 120%;
+            color: #0842b0;
+        }
+        .destiny-subtitle {
+            font-size: 1.6rem;
+        }
+        .destiny-container {
+            .destiny-box-item {
+                .destiny-info {
+                    h4 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
     }
     .tours {
         .tours-slide-container {

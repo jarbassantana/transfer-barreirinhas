@@ -28,8 +28,8 @@ var tripSwiper = new Swiper('.trips-slide', {
             slidesPerView: 2,
             spaceBetween: 32
         },
-        807: {
-            slidesPerView: 3,
+        769: {
+            slidesPerView: 2.5,
             spaceBetween: 32
         },
         993: {
