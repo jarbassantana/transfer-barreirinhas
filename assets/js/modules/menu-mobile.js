@@ -1,7 +1,8 @@
 export default function menuMobile() {
     const showMenu = document.querySelector('#bx')
-
-    showMenu.addEventListener('click', initMenuMobile)
+    if (showMenu) {
+        showMenu.addEventListener('click', initMenuMobile)
+    }
 }
 
 function initMenuMobile(event) {

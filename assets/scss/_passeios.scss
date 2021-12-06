@@ -26,5 +26,35 @@
     }
 }
 
+.br-container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    .br-title-container {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 3.2rem;
+            line-height: 120%;
+            font-weight: $bold;
+        }
+        span {
+            font-size: 1.6rem;
+            line-height: 120%;
+            font-weight: $regular;
+            color: $brand-gray-primary;
+        }
+    }
+    .br-search-container {
+        background-color: $brand-gray;
+        #search {
+            background: none;
+            font-size: 1.6rem;
+        }
+    }
+}
+
 // ================================== IMPORT FOOTER ================================== //
 @import "_footer";
