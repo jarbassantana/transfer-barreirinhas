@@ -831,7 +831,7 @@
         .tours-slide-container {
             width: 100%;
             .tours-box-slide {
-                max-width: 34rem;
+                max-width: 35rem;
                 .tours-content-img {
                     img {
                         width: 100%;
@@ -841,6 +841,20 @@
                 .tours-container__info {
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+@include responsive(320px) {
+    .tours {
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 0;
+        }
+        .tours-slide-container {
+            .tours-box-slide {
+                max-width: 31rem;
             }
         }
     }

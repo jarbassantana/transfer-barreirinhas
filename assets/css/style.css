@@ -1596,7 +1596,7 @@ header .brand-transfer {
     width: 100%;
   }
   .tours .tours-slide-container .tours-box-slide {
-    max-width: 34rem;
+    max-width: 35rem;
   }
   .tours .tours-slide-container .tours-box-slide .tours-content-img img {
     width: 100%;
@@ -1604,6 +1604,16 @@ header .brand-transfer {
   }
   .tours .tours-slide-container .tours-box-slide .tours-container__info {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .tours .container {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+  .tours .tours-slide-container .tours-box-slide {
+    max-width: 31rem;
   }
 }
 
