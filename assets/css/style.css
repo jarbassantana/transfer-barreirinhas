@@ -1532,6 +1532,16 @@ header .brand-transfer {
   }
 }
 
+@media (max-width: 415px) {
+  .tours .container {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+  .tours .tours-slide-container .tours-box-slide {
+    max-width: 40rem;
+  }
+}
+
 @media (max-width: 390px) {
   .info-hero-section {
     padding-top: 3.2rem;
