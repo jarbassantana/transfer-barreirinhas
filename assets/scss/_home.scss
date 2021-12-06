@@ -583,6 +583,7 @@
             display: flex;
             img {
                 max-width: 100%;
+                height: 31rem;
             }
         }
     }
@@ -681,9 +682,7 @@
             gap: 6.2rem;
         }
         .tours-content-video {
-            position: relative;
-            right: 0;
-            display: flex;
+            display: none;
         }
     }
 }
@@ -710,12 +709,54 @@
 
 @include responsive(390px) {
     .info-hero-section {
-        padding-top: 4.8rem;
+        padding-top: 3.2rem;
+        h1 {
+            font-size: 3.2rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
     }
+
+    .info-options-container {
+        .info-form-content {
+            // flex-direction: column;
+            // width: 100%;
+            // align-items: center;
+            // display: flex;
+            // padding: 3.2rem 3.2rem;
+            gap: 3.2rem;
+        }
+    }
+    .destiny-container {
+        h2 {
+            font-size: 3.2rem;
+            line-height: 120%;
+            color: #0842b0;
+        }
+        .destiny-subtitle {
+            font-size: 1.6rem;
+        }
+        .destiny-container {
+            .destiny-box-item {
+                .destiny-info {
+                    h4 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
     .tours {
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 0;
+        }
         .tours-slide-container {
             .tours-box-slide {
-                max-width: 28rem;
+                max-width: 36rem;
                 .tours-content-img {
                     img {
                         width: 100%;
@@ -731,6 +772,29 @@
             svg {
                 width: 100%;
                 max-width: 6rem;
+            }
+        }
+    }
+}
+@include responsive(365px) {
+    .tours {
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 0;
+        }
+        .tours-slide-container {
+            width: 100%;
+            .tours-box-slide {
+                max-width: 34rem;
+                .tours-content-img {
+                    img {
+                        width: 100%;
+                        max-width: none;
+                    }
+                }
+                .tours-container__info {
+                    width: 100%;
+                }
             }
         }
     }
