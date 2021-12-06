@@ -717,6 +717,9 @@
             display: none;
         }
     }
+    .txt-center {
+        text-align: center;
+    }
 }
 
 @include responsive(660px) {

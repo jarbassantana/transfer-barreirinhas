@@ -101,5 +101,53 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2.4rem;
+        .rodape-content-card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            img {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 27.5rem;
+            }
+            .rodape-subtitle {
+                text-align: center;
+                max-width: none;
+                width: 100%;
+            }
+
+            .rodape-social-content {
+                justify-content: center;
+            }
+        }
+        .rodape-content-card {
+            h3 {
+                width: 100%;
+                text-align: center;
+            }
+            .rodape-container-pagamento {
+                width: 100%;
+                p {
+                    max-width: 100%;
+                    width: 100%;
+                    text-align: center;
+                }
+                .rodape-content-pagamento {
+                    max-width: 100%;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+        .rodape-content-card {
+            .rodape-links-uteis {
+                align-items: center;
+            }
+        }
+        .rodape-content-card {
+            .rodape-contato {
+                align-items: center;
+            }
+        }
     }
 }

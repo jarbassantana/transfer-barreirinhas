@@ -1305,6 +1305,60 @@ header .brand-transfer {
         grid-template-columns: 1fr;
     grid-gap: 2.4rem;
   }
+  .rodape-container .rodape-content-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rodape-container .rodape-content-card img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 27.5rem;
+  }
+  .rodape-container .rodape-content-card .rodape-subtitle {
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-social-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rodape-container .rodape-content-card h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento {
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento p {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento .rodape-content-pagamento {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-links-uteis {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rodape-container .rodape-content-card .rodape-contato {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -1517,6 +1571,9 @@ header .brand-transfer {
   }
   .tours .tours-content-video {
     display: none;
+  }
+  .txt-center {
+    text-align: center;
   }
 }
 
@@ -1992,6 +2049,60 @@ header .brand-transfer {
         grid-template-columns: 1fr;
     grid-gap: 2.4rem;
   }
+  .rodape-container .rodape-content-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rodape-container .rodape-content-card img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 27.5rem;
+  }
+  .rodape-container .rodape-content-card .rodape-subtitle {
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-social-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rodape-container .rodape-content-card h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento {
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento p {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento .rodape-content-pagamento {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-links-uteis {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rodape-container .rodape-content-card .rodape-contato {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 header {
@@ -2215,10 +2326,18 @@ header .brand-transfer {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3.2rem;
+  justify-items: center;
+  grid-auto-flow: row;
 }
 
 .br-passeios-card {
+  border-radius: 8px;
   max-width: 38.4rem;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
+          filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
 }
 
 .br-passeios-card .br-passeios-img-content {
@@ -2257,7 +2376,149 @@ header .brand-transfer {
 }
 
 .br-passeios-card .br-passeios-img-content .value-content :last-child {
+  font-weight: 700;
   font-size: 2.4rem;
+}
+
+.br-passeios-card .br-passeios-img-content .value-content :last-child::before {
+  content: "R$";
+  font-size: 1.2rem;
+}
+
+.br-passeios-card .br-passeios-content-card {
+  padding: 2rem 3.2rem;
+  background-color: #f2f5fc;
+}
+
+.br-passeios-card .br-passeios-content-card h3 {
+  text-align: center;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios__s-l {
+  padding-top: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios__s-l span {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  line-height: 150%;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.br-passeios-card .br-passeios-content-card p {
+  padding-top: 1.5rem;
+  font-size: 1.6rem;
+  word-break: break-all;
+  font-weight: 700;
+  color: #7a7a7a;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.4rem;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-primario {
+  font-size: 1.6rem;
+  background-color: #fee14f;
+  color: #000;
+  line-height: 120%;
+  padding: 1.1rem 2.4rem 1.3rem 2.4rem;
+  border: 2px solid #fee14f;
+  border-radius: 5px;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-primario:hover {
+  background-color: transparent;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-secundario {
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: #000;
+  line-height: 120%;
+  padding: 1.1rem 2.4rem 1.3rem 2.4rem;
+  border: 2px solid #0842b0;
+  border-radius: 5px;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-secundario:hover {
+  background-color: transparent;
+  background-color: #0842b0;
+  color: #fff;
+}
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding-top: 7.4rem;
+  padding-bottom: 12rem;
+}
+
+.pagination ul li {
+  padding: 1rem 1.5rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.pagination ul li a {
+  color: #000;
+}
+
+.pagination ul li:hover {
+  border: 1px solid #fff;
+  background-color: #0842b0;
+  cursor: pointer;
+}
+
+.pagination ul li:hover a {
+  color: #fff;
+}
+
+.pagination ul :first-child {
+  cursor: pointer;
+}
+
+.pagination ul :first-child:hover i {
+  color: #fff;
+}
+
+.pagination ul :last-child {
+  cursor: pointer;
+}
+
+.pagination ul :last-child:hover i {
+  color: #fff;
 }
 
 .rodape {
@@ -2389,6 +2650,60 @@ header .brand-transfer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 2.4rem;
+  }
+  .rodape-container .rodape-content-card {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rodape-container .rodape-content-card img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 27.5rem;
+  }
+  .rodape-container .rodape-content-card .rodape-subtitle {
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-social-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rodape-container .rodape-content-card h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento {
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento p {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .rodape-container .rodape-content-card .rodape-container-pagamento .rodape-content-pagamento {
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .rodape-container .rodape-content-card .rodape-links-uteis {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rodape-container .rodape-content-card .rodape-contato {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
