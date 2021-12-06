@@ -1,3 +1,4 @@
+@import "_mixins";
 // =============================== NEWSLETTER =============================== //
 
 .newsletter {
@@ -51,6 +52,54 @@
                     border: 2px solid $brand-blue-primary;
                     background-color: transparent;
                     color: $brand-black;
+                }
+            }
+        }
+    }
+}
+
+// ============================= MEDIAS NEWSLETTER ========================= //
+
+@include responsive(915px) {
+    .newsletter {
+        .newsletter-container {
+            padding: 9.4rem 2.4rem;
+            h3 {
+                font-size: 3.2rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+            form {
+                flex-direction: column;
+                gap: 3.2rem;
+                input {
+                    padding: 1.6rem 2.4rem;
+                    border-radius: 8px;
+                    max-width: 40rem;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+                button {
+                    padding: 1.4rem 2.4rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 40rem;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+@include responsive(390px) {
+    .newsletter {
+        .newsletter-container {
+            padding: 4.8rem 2.4rem;
+            form {
+                input {
+                    width: 100%;
+                    font-size: 1.2rem;
                 }
             }
         }

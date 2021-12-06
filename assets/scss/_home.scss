@@ -660,40 +660,6 @@
             gap: 3.2rem;
         }
     }
-    .newsletter {
-        .newsletter-container {
-            padding: 9.4rem 2.4rem;
-            h3 {
-                font-size: 3.2rem;
-            }
-            p {
-                font-size: 1.6rem;
-            }
-            form {
-                flex-direction: column;
-                gap: 3.2rem;
-                input {
-                    padding: 1.6rem 2.4rem;
-                    border-radius: 8px;
-                    max-width: 40rem;
-                    margin: 0 auto;
-                    width: 100%;
-                }
-                button {
-                    padding: 1.4rem 2.4rem;
-                    margin: 0 auto;
-                    width: 100%;
-                    max-width: 40rem;
-                    border-radius: 8px;
-                }
-            }
-        }
-    }
-    .rodape-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2.4rem;
-    }
 }
 
 @include responsive(768px) {
@@ -740,11 +706,6 @@
             }
         }
     }
-    .rodape-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2.4rem;
-    }
 }
 
 @include responsive(390px) {
@@ -770,17 +731,6 @@
             svg {
                 width: 100%;
                 max-width: 6rem;
-            }
-        }
-    }
-    .newsletter {
-        .newsletter-container {
-            padding: 4.8rem 2.4rem;
-            form {
-                input {
-                    width: 100%;
-                    font-size: 1.2rem;
-                }
             }
         }
     }

@@ -1,3 +1,4 @@
+@import "_mixins";
 // ================================= Footer ================================= //
 
 .rodape {
@@ -82,5 +83,23 @@
         color: $brand-gray-primary;
         width: 100%;
         text-align: center;
+    }
+}
+
+// ============================ MEDIA FOOTER ============================== //
+
+@include responsive(915px) {
+    .rodape-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.4rem;
+    }
+}
+
+@include responsive(530px) {
+    .rodape-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.4rem;
     }
 }
