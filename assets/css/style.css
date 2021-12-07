@@ -2336,9 +2336,19 @@ header .brand-transfer {
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
           filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
-  border: 1px solid red;
+  background-color: #f2f5fc;
 }
 
 .br-passeios-card .br-passeios-img-content {
@@ -2388,7 +2398,6 @@ header .brand-transfer {
 
 .br-passeios-card .br-passeios-content-card {
   padding: 2rem 3.2rem;
-  background-color: #f2f5fc;
 }
 
 .br-passeios-card .br-passeios-content-card h3 {
@@ -2428,17 +2437,17 @@ header .brand-transfer {
   color: #7a7a7a;
 }
 
-.br-passeios-card .br-passeios-content-card .br-passeios-btns {
+.br-passeios-card .br-passeios-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2.4rem;
+  padding: 0 3.2rem 2.4rem 3.2rem;
 }
 
-.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-primario {
+.br-passeios-card .br-passeios-btns .br-btn-primario {
   font-size: 1.6rem;
   background-color: #fee14f;
   color: #000;
@@ -2451,11 +2460,11 @@ header .brand-transfer {
   transition: 0.3s ease;
 }
 
-.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-primario:hover {
+.br-passeios-card .br-passeios-btns .br-btn-primario:hover {
   background-color: transparent;
 }
 
-.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-secundario {
+.br-passeios-card .br-passeios-btns .br-btn-secundario {
   font-size: 1.6rem;
   background-color: transparent;
   color: #000;
@@ -2468,7 +2477,7 @@ header .brand-transfer {
   transition: 0.3s ease;
 }
 
-.br-passeios-card .br-passeios-content-card .br-passeios-btns .br-btn-secundario:hover {
+.br-passeios-card .br-passeios-btns .br-btn-secundario:hover {
   background-color: transparent;
   background-color: #0842b0;
   color: #fff;

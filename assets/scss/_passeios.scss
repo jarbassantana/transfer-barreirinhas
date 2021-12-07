@@ -70,8 +70,11 @@
     max-width: 38.4rem;
     overflow: hidden;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
-    border: 1px solid red;
+    background-color: $brand-blue-secondary;
 
     .br-passeios-img-content {
         position: relative;
@@ -107,7 +110,6 @@
     }
     .br-passeios-content-card {
         padding: 2rem 3.2rem;
-        background-color: $brand-blue-secondary;
 
         h3 {
             text-align: center;
@@ -134,39 +136,39 @@
             font-weight: $bold;
             color: $brand-gray-primary;
         }
-        .br-passeios-btns {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 2.4rem;
-            .br-btn-primario {
-                font-size: 1.6rem;
-                background-color: $brand-yellow-70;
-                color: $brand-black;
-                line-height: 120%;
-                padding: 1.1rem 2.4rem 1.3rem 2.4rem;
-                border: 2px solid $brand-yellow-70;
-                border-radius: 5px;
-                font-weight: $bold;
-                transition: 0.3s ease;
-                &:hover {
-                    background-color: transparent;
-                }
-            }
-            .br-btn-secundario {
-                font-size: 1.6rem;
+    }
+    .br-passeios-btns {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3.2rem 2.4rem 3.2rem;
+        .br-btn-primario {
+            font-size: 1.6rem;
+            background-color: $brand-yellow-70;
+            color: $brand-black;
+            line-height: 120%;
+            padding: 1.1rem 2.4rem 1.3rem 2.4rem;
+            border: 2px solid $brand-yellow-70;
+            border-radius: 5px;
+            font-weight: $bold;
+            transition: 0.3s ease;
+            &:hover {
                 background-color: transparent;
-                color: $brand-black;
-                line-height: 120%;
-                padding: 1.1rem 2.4rem 1.3rem 2.4rem;
-                border: 2px solid $brand-blue-primary;
-                border-radius: 5px;
-                font-weight: $bold;
-                transition: 0.3s ease;
-                &:hover {
-                    background-color: transparent;
-                    background-color: $brand-blue-primary;
-                    color: $brand-white;
-                }
+            }
+        }
+        .br-btn-secundario {
+            font-size: 1.6rem;
+            background-color: transparent;
+            color: $brand-black;
+            line-height: 120%;
+            padding: 1.1rem 2.4rem 1.3rem 2.4rem;
+            border: 2px solid $brand-blue-primary;
+            border-radius: 5px;
+            font-weight: $bold;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: transparent;
+                background-color: $brand-blue-primary;
+                color: $brand-white;
             }
         }
     }
