@@ -3513,11 +3513,11 @@ header .brand-transfer {
   border-radius: 5px;
   border: 1px solid #0842b0;
   background-color: #0842b0;
-  cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   opacity: 0;
   visibility: none;
+  cursor: unset;
 }
 
 .btn-ScrollInitial i {
@@ -3538,5 +3538,6 @@ header .brand-transfer {
   transition: 0.5s ease;
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
