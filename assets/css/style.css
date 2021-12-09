@@ -3472,7 +3472,7 @@ header .brand-transfer {
 }
 
 @media (max-width: 414px) {
-  .br-container-main-reserva h2 {
+  .br-container-main-reserva .rs-reserva-title {
     font-size: 2.4rem;
   }
   .reserva .reserva-price-content {
