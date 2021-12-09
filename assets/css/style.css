@@ -3484,11 +3484,24 @@ header .brand-transfer {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reserva .reserva-price-content a {
+    width: 100%;
+    text-align: center;
+  }
   .reserva .reserva-price-content .price-content {
     padding-bottom: 1.6rem;
   }
+  .reserva .reserva-data-container {
+    padding: 3.2rem 3.2rem;
+  }
   .reserva .add-to-cart-container button {
     font-size: 1.6rem;
+  }
+  .reserva .input-container-opt-horario {
+    width: 100%;
+  }
+  .reserva .input-container-opt-horario select {
+    width: 100%;
   }
 }
 

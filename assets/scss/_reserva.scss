@@ -491,13 +491,26 @@
         .reserva-price-content {
             flex-direction: column;
             align-items: flex-start;
+            a {
+                width: 100%;
+                text-align: center;
+            }
             .price-content {
                 padding-bottom: 1.6rem;
             }
         }
+        .reserva-data-container {
+            padding: 3.2rem 3.2rem;
+        }
         .add-to-cart-container {
             button {
                 font-size: 1.6rem;
+            }
+        }
+        .input-container-opt-horario {
+            width: 100%;
+            select {
+                width: 100%;
             }
         }
     }
