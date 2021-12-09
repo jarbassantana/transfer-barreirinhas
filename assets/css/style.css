@@ -126,7 +126,7 @@ header .bx {
 }
 
 header .bx::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 0.2rem;
@@ -138,7 +138,7 @@ header .bx::after {
 }
 
 header .bx::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 0.2rem;
@@ -160,7 +160,7 @@ header .active-bx {
 }
 
 header .active-bx::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 0.2rem;
@@ -174,10 +174,10 @@ header .active-bx::after {
 }
 
 header .active-bx::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
-  height: 0.2rem;
+  height: 3px;
   top: 50%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -253,14 +253,14 @@ header .active-menu-mobile .nav-link-mobile {
 }
 
 header .active-menu-mobile .nav-link-mobile::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   bottom: -0.1rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   left: 2.4rem;
-  height: 0.3rem;
+  height: 3px;
   background-color: #0842b0;
 }
 
@@ -1060,6 +1060,10 @@ header .brand-transfer {
   line-height: 150%;
   max-width: 52.1rem;
   color: #7a7a7a;
+}
+
+.newsletter {
+  padding-top: 12rem;
 }
 
 .newsletter .newsletter-container {
@@ -2266,7 +2270,7 @@ header .brand-transfer {
   font-size: 2.4rem;
   line-height: 120%;
   font-weight: 400;
-  color: #fff;
+  color: #e8e8e8;
   margin: 0 auto;
   text-align: center;
 }
@@ -2490,7 +2494,6 @@ header .brand-transfer {
   list-style: none;
   gap: 1rem;
   padding-top: 7.4rem;
-  padding-bottom: 12rem;
 }
 
 .pagination ul li {
@@ -2753,7 +2756,63 @@ header .brand-transfer {
   }
 }
 
+@media (max-width: 630px) {
+  .br-container-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  .br-container-main .br-title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .br-container-main .br-title-container h2 {
+    font-size: 3.2rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
+  .br-container-main .br-title-container span {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 410px) {
+  .bg-top-section .container h1 {
+    font-size: 3.2rem;
+  }
+  .bg-top-section .container p {
+    font-size: 1.6rem;
+  }
+  .br-container-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  .br-container-main .br-title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .br-container-main .br-title-container h2 {
+    font-size: 2.4rem;
+    line-height: 120%;
+    font-weight: 700;
+  }
   .br-passeios-card .br-passeios-content-card {
     padding: 2rem 2rem;
     background-color: #f2f5fc;
@@ -2779,5 +2838,692 @@ header .brand-transfer {
     margin-top: 1.6rem;
     text-align: center;
   }
+}
+
+.br-container-main-reserva {
+  padding-top: 12rem;
+}
+
+.br-container-main-reserva h2 {
+  padding-bottom: 4rem;
+  font-size: 3.2rem;
+}
+
+.reserva {
+  padding-top: 12rem;
+}
+
+.reserva .container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: 80rem 1fr;
+      grid-template-columns: 80rem 1fr;
+}
+
+.reserva .container .info-reserva-left {
+  margin-right: 3.2rem;
+}
+
+.reserva .container .info-reserva-left .reserva-container-info h2 {
+  font-size: 3.2rem;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
+.reserva .container .info-reserva-left .reserva-container-info span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.reserva .container .info-reserva-left .reserva-slide-container {
+  padding-top: 6.4rem;
+  width: 100%;
+}
+
+.reserva .container .info-reserva-left .reserva-slide-container img {
+  height: 45.3rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.reserva .container .info-reserva-left .reserva-slide-container .swiper-button-next,
+.reserva .container .info-reserva-left .reserva-slide-container .swiper-button-prev {
+  color: #000;
+}
+
+.reserva .container .info-reserva-left .reserva-slide-container .swiper-button-next::after,
+.reserva .container .info-reserva-left .reserva-slide-container .swiper-button-prev::after {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.reserva .container .info-reserva-left .reserva-container-roteiro {
+  padding-top: 3.5rem;
+}
+
+.reserva .container .info-reserva-left .reserva-container-roteiro .roteiro-content-title {
+  width: 100%;
+  padding: 2.6rem 4rem;
+  border-radius: 5px;
+  background-color: #0842b0;
+}
+
+.reserva .container .info-reserva-left .reserva-container-roteiro .roteiro-content-title h3 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.reserva .container .info-reserva-left .reserva-container-roteiro .roteiro-content-title h3 i {
+  padding-right: 1rem;
+}
+
+.reserva .container .info-reserva-left .roteiro-content-info {
+  padding: 2.4rem 4rem;
+}
+
+.reserva .container .info-reserva-left .roteiro-content-info p {
+  margin-bottom: 2.4rem;
+  color: #7a7a7a;
+  line-height: 150%;
+  font-size: 1.6rem;
+}
+
+.reserva .container .info-reserva-left .roteiro-content-info :last-child {
+  margin-bottom: 0;
+}
+
+.reserva .container .info-reserva-left .reserva-container-horarios .horario-content-title {
+  width: 100%;
+  padding: 2.6rem 4rem;
+  border-radius: 5px;
+  background-color: #fee14f;
+}
+
+.reserva .container .info-reserva-left .reserva-container-horarios .horario-content-title h3 {
+  font-size: 2.4rem;
+  color: #000;
+}
+
+.reserva .container .info-reserva-left .reserva-container-horarios .horario-content-title h3 i {
+  padding-right: 1rem;
+}
+
+.reserva .container .info-reserva-left .reserva-container-horarios .horario-content-info {
+  padding: 2.4rem 4rem;
+  font-size: 1.6rem;
+  color: #7a7a7a;
+}
+
+.reserva .container .info-reserva-left .reserva-container-horarios .horario-content-info span {
+  display: block;
+  line-height: 150%;
+}
+
+.reserva .reserva-price-content {
+  padding: 2.4rem 3.2rem;
+  background-color: #f2f5fc;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  border: 1px solid #e8e8e8;
+}
+
+.reserva .reserva-price-content .price-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reserva .reserva-price-content .price-content :first-child {
+  font-size: 1.8rem;
+  color: #7a7a7a;
+  font-weight: 400;
+}
+
+.reserva .reserva-price-content .price-content :last-child {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.reserva .reserva-price-content a {
+  display: inline-block;
+  color: #000;
+  font-size: 2rem;
+  padding: 1.4rem 2.2rem;
+  background-color: #fee14f;
+  border-radius: 5px;
+  border: 2px solid #fee14f;
+  font-weight: 700;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-transform: uppercase;
+}
+
+.reserva .reserva-price-content a:hover {
+  border: 2px solid #0842b0;
+  background-color: transparent;
+}
+
+.reserva .reserva-data-container {
+  background-color: #f2f5fc;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 4rem 3.2rem 3.2rem 4rem;
+}
+
+.reserva .reserva-data-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  line-height: 120%;
+}
+
+.reserva .reserva-data-content .month-and-indicator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reserva .reserva-data-content .month-and-indicator .month-indicator {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.reserva .reserva-data-content .month-and-indicator .btn-indicador-container span {
+  font-size: 1.8rem;
+}
+
+.reserva .reserva-data-content .month-and-indicator .btn-indicador-container span:first-child {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.reserva .reserva-data-content .month-and-indicator .btn-indicador-container span:last-child {
+  color: #7a7a7a;
+}
+
+.reserva .reserva-data-content .date-content-calendar {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.reserva .reserva-data-content .date-content-calendar .day-of-week {
+  padding-top: 2.4rem;
+  border: 1px solid transparent;
+}
+
+.reserva .reserva-data-content .date-content-calendar .day-of-week div {
+  padding: 1rem;
+}
+
+.reserva .reserva-data-content .date-content-calendar .date-grid {
+  padding-top: 1rem;
+}
+
+.reserva .reserva-data-content .date-content-calendar .date-grid button {
+  padding: 0.8rem 0.5rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  grid-gap: 1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.reserva .reserva-data-content .date-content-calendar .date-grid button:hover {
+  background-color: #0842b0;
+  color: #fff;
+  border: 1px solid #0842b0;
+}
+
+.reserva .reserva-data-content .date-content-calendar .date-grid button.rs-active {
+  background-color: #0842b0;
+  color: #fff;
+  border: 1px solid #0842b0;
+}
+
+.reserva .horario-container h3 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  line-height: 120%;
+}
+
+.reserva .horario-container .horario-content {
+  padding: 2.8rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reserva .horario-container .horario-content span {
+  font-size: 2rem;
+  color: #7a7a7a;
+}
+
+.reserva .horario-container .horario-content .input-container-opt-horario {
+  border-radius: 5px;
+  padding: 1.3rem 1.5rem;
+  background-color: #e8e8e8;
+}
+
+.reserva .horario-container .horario-content .input-container-opt-horario select {
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reserva .horario-container .aviso-content {
+  margin-top: 2rem;
+  padding: 3.2rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.reserva .horario-container .aviso-content span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #7a7a7a;
+}
+
+.reserva .quantidade-container {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.reserva .quantidade-container .quantidade-adult-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2.9rem;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .adult-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .adult-content span {
+  font-size: 1.6rem;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .adult-content :first-child {
+  color: #7a7a7a;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .adult-content :first-child strong {
+  color: #000;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .adult-content :last-child {
+  font-weight: 700;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult span i {
+  cursor: pointer;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult input::-webkit-outer-spin-button,
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.reserva .quantidade-container .quantidade-adult-container .quantidade-adult input {
+  margin: 0 1rem;
+  max-width: 3.5rem;
+  padding: 0;
+  height: 3.5rem;
+  text-align: center;
+  border: 1px solid #7a7a7a;
+  border-radius: 3px;
+}
+
+.reserva .quantidade-container .quantiade-child-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #7a7a7a;
+  padding-top: 2.9rem;
+}
+
+.reserva .quantidade-container .quantiade-child-container .child-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reserva .quantidade-container .quantiade-child-container .child-content span {
+  font-size: 1.6rem;
+}
+
+.reserva .quantidade-container .quantiade-child-container .child-content :first-child {
+  color: #7a7a7a;
+}
+
+.reserva .quantidade-container .quantiade-child-container .child-content :first-child strong {
+  color: #000;
+}
+
+.reserva .quantidade-container .quantiade-child-container .child-content :last-child {
+  font-weight: 700;
+}
+
+.reserva .quantidade-container .quantiade-child-container .quantidade-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserva .quantidade-container .quantiade-child-container .quantidade-child span i {
+  cursor: pointer;
+}
+
+.reserva .quantidade-container .quantiade-child-container .quantidade-child input::-webkit-outer-spin-button,
+.reserva .quantidade-container .quantiade-child-container .quantidade-child input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.reserva .quantidade-container .quantiade-child-container .quantidade-child input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.reserva .quantidade-container .quantiade-child-container .quantidade-child input {
+  margin: 0 1rem;
+  max-width: 3.5rem;
+  padding: 0;
+  height: 3.5rem;
+  text-align: center;
+  border: 1px solid #7a7a7a;
+  border-radius: 3px;
+}
+
+.reserva .add-to-cart-container {
+  margin-top: 4rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reserva .add-to-cart-container button {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 120%;
+  padding: 1.8rem 3.2rem;
+  background-color: #fee14f;
+  border-radius: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  border: 2px solid #fee14f;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.reserva .add-to-cart-container button:hover {
+  border: 2px solid #0842b0;
+  background-color: transparent;
+}
+
+.reserva .transfer-container,
+.reserva .confirmation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f2f5fc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.2rem 2rem;
+  border: 1px solid #e8e8e8;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.reserva .transfer-container img,
+.reserva .confirmation-container img {
+  padding-right: 1.2rem;
+}
+
+.reserva .transfer-container h4,
+.reserva .confirmation-container h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.reserva .transfer-container span,
+.reserva .confirmation-container span {
+  font-size: 1.4rem;
+  color: #7a7a7a;
+}
+
+.day-of-week,
+.date-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  grid-gap: 0.2rem;
+  justify-items: center;
+}
+
+.day-of-week button,
+.date-grid button {
+  background-color: transparent;
+  width: 100%;
+}
+
+.date-grid button:first-child {
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 1165px) {
+  .reserva .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40rem;
+        grid-template-columns: 60% 40rem;
+  }
+  .reserva .reserva-price-content a {
+    font-size: 1.6rem;
+  }
+  .reserva .horario-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .reserva .horario-content span {
+    padding-bottom: 1.6rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .reserva .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 44.8rem;
+        grid-template-columns: 50% 44.8rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .reserva .container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reserva .container .info-reserva-left {
+    margin: 0;
+  }
+  .reserva .container .info-reserva-left .reserva-slide-container img {
+    height: auto;
+  }
+}
+
+@media (max-width: 414px) {
+  .br-container-main-reserva h2 {
+    font-size: 2.4rem;
+  }
+  .reserva .reserva-price-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reserva .reserva-price-content .price-content {
+    padding-bottom: 1.6rem;
+  }
+  .reserva .add-to-cart-container button {
+    font-size: 1.6rem;
+  }
+}
+
+.btn-ScrollInitial {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 5px;
+  border: 1px solid #0842b0;
+  background-color: #0842b0;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: none;
+}
+
+.btn-ScrollInitial i {
+  color: #fff;
+}
+
+.btn-ScrollInitial:hover {
+  background-color: transparent;
+  border: 1px solid #0842b0;
+}
+
+.btn-ScrollInitial:hover i {
+  color: #0842b0;
+}
+
+.btn-ScrollInitial.active {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

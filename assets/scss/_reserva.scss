@@ -1,0 +1,504 @@
+.br-container-main-reserva {
+    padding-top: 12rem;
+    h2 {
+        padding-bottom: 4rem;
+        font-size: 3.2rem;
+    }
+}
+.reserva {
+    padding-top: 12rem;
+    .container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 80rem 1fr;
+        .info-reserva-left {
+            margin-right: 3.2rem;
+
+            .reserva-container-info {
+                h2 {
+                    font-size: 3.2rem;
+                    padding-bottom: 2rem;
+                    font-weight: $bold;
+                }
+                span {
+                    font-size: 2rem;
+                    font-weight: $regular;
+                    color: $brand-gray-primary;
+                }
+            }
+            .reserva-slide-container {
+                padding-top: 6.4rem;
+                width: 100%;
+                img {
+                    height: 45.3rem;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+                .swiper-button-next,
+                .swiper-button-prev {
+                    color: $brand-black;
+                }
+                .swiper-button-next::after,
+                .swiper-button-prev::after {
+                    font-size: 2.4rem;
+                    font-weight: $bold;
+                }
+            }
+            .reserva-container-roteiro {
+                padding-top: 3.5rem;
+                .roteiro-content-title {
+                    width: 100%;
+                    padding: 2.6rem 4rem;
+                    border-radius: 5px;
+                    background-color: $brand-blue-primary;
+                    h3 {
+                        font-size: 2.4rem;
+                        color: $brand-white;
+                        i {
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .roteiro-content-info {
+                padding: 2.4rem 4rem;
+                p {
+                    margin-bottom: 2.4rem;
+                    color: $brand-gray-primary;
+                    line-height: 150%;
+                    font-size: 1.6rem;
+                }
+                :last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .reserva-container-horarios {
+                .horario-content-title {
+                    width: 100%;
+                    padding: 2.6rem 4rem;
+                    border-radius: 5px;
+                    background-color: $brand-yellow-70;
+                    h3 {
+                        font-size: 2.4rem;
+                        color: $brand-black;
+                        i {
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+                .horario-content-info {
+                    padding: 2.4rem 4rem;
+                    font-size: 1.6rem;
+                    color: $brand-gray-primary;
+                    span {
+                        display: block;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .reserva-price-content {
+        padding: 2.4rem 3.2rem;
+        background-color: $brand-blue-secondary;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        border: 1px solid $brand-gray;
+        .price-content {
+            display: flex;
+            flex-direction: column;
+            :first-child {
+                font-size: 1.8rem;
+                color: $brand-gray-primary;
+                font-weight: $regular;
+            }
+            :last-child {
+                font-size: 2.4rem;
+                color: $brand-black;
+                font-weight: $bold;
+            }
+        }
+        a {
+            display: inline-block;
+            color: $brand-black;
+            font-size: 2rem;
+            padding: 1.4rem 2.2rem;
+            background-color: $brand-yellow-70;
+            border-radius: 5px;
+            border: 2px solid $brand-yellow-70;
+            font-weight: $bold;
+            transition: 0.5s ease;
+            text-transform: uppercase;
+            &:hover {
+                border: 2px solid $brand-blue-primary;
+                background-color: transparent;
+            }
+        }
+    }
+    .reserva-data-container {
+        background-color: $brand-blue-secondary;
+        border: 1px solid $brand-gray;
+        border-radius: 5px;
+        padding: 4rem 3.2rem 3.2rem 4rem;
+    }
+    .reserva-data-content {
+        h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding-bottom: 2rem;
+            line-height: 120%;
+        }
+        .month-and-indicator {
+            display: flex;
+            justify-content: space-between;
+            .month-indicator {
+                font-size: 1.8rem;
+                font-weight: $bold;
+            }
+            .btn-indicador-container {
+                span {
+                    font-size: 1.8rem;
+                }
+                span:first-child {
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+                span:last-child {
+                    color: $brand-gray-primary;
+                }
+            }
+        }
+        .date-content-calendar {
+            padding: 2rem;
+            background-color: $brand-white;
+            border-radius: 5px;
+            .day-of-week {
+                padding-top: 2.4rem;
+                border: 1px solid transparent;
+                div {
+                    padding: 1rem;
+                }
+            }
+            .date-grid {
+                padding-top: 1rem;
+                button {
+                    padding: 0.8rem 0.5rem;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    border: 1px solid $brand-gray;
+                    border-radius: 5px;
+                    grid-gap: 1px;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        background-color: $brand-blue-primary;
+                        color: $brand-white;
+                        border: 1px solid $brand-blue-primary;
+                    }
+                }
+                button.rs-active {
+                    background-color: $brand-blue-primary;
+                    color: $brand-white;
+                    border: 1px solid $brand-blue-primary;
+                }
+            }
+        }
+    }
+    .horario-container {
+        h3 {
+            font-size: 1.9rem;
+            text-transform: uppercase;
+            font-weight: $bold;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            line-height: 120%;
+        }
+        .horario-content {
+            padding: 2.8rem 2rem;
+            background-color: $brand-white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span {
+                font-size: 2rem;
+                color: $brand-gray-primary;
+            }
+            .input-container-opt-horario {
+                border-radius: 5px;
+                padding: 1.3rem 1.5rem;
+                background-color: $brand-gray;
+                select {
+                    background: transparent;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+        .aviso-content {
+            margin-top: 2rem;
+            padding: 3.2rem 2rem;
+            background-color: $brand-white;
+            border-radius: 5px;
+            span {
+                font-size: 1.6rem;
+                font-weight: $regular;
+                color: $brand-gray-primary;
+            }
+        }
+    }
+    .quantidade-container {
+        margin-top: 2rem;
+        background-color: $brand-white;
+        border-radius: 5px;
+        padding: 2rem;
+        .quantidade-adult-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2.9rem;
+            .adult-content {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 1.6rem;
+                }
+                :first-child {
+                    strong {
+                        color: $brand-black;
+                    }
+                    color: $brand-gray-primary;
+                }
+                :last-child {
+                    font-weight: $bold;
+                }
+            }
+            .quantidade-adult {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                span {
+                    i {
+                        cursor: pointer;
+                    }
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
+                input[type="number"] {
+                    -moz-appearance: textfield;
+                }
+                input {
+                    margin: 0 1rem;
+                    max-width: 3.5rem;
+                    padding: 0;
+                    height: 3.5rem;
+                    text-align: center;
+                    border: 1px solid $brand-gray-primary;
+                    border-radius: 3px;
+                }
+            }
+        }
+        .quantiade-child-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid $brand-gray-primary;
+            padding-top: 2.9rem;
+            .child-content {
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 1.6rem;
+                }
+                :first-child {
+                    strong {
+                        color: $brand-black;
+                    }
+                    color: $brand-gray-primary;
+                }
+                :last-child {
+                    font-weight: $bold;
+                }
+            }
+            .quantidade-child {
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                span {
+                    i {
+                        cursor: pointer;
+                    }
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
+                input[type="number"] {
+                    -moz-appearance: textfield;
+                }
+                input {
+                    margin: 0 1rem;
+                    // width: 100%;
+                    max-width: 3.5rem;
+                    padding: 0;
+                    height: 3.5rem;
+                    text-align: center;
+                    border: 1px solid $brand-gray-primary;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .add-to-cart-container {
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        button {
+            font-size: 2rem;
+            font-weight: $bold;
+            line-height: 120%;
+            padding: 1.8rem 3.2rem;
+            background-color: $brand-yellow-70;
+            border-radius: 5px;
+            width: 100%;
+            text-transform: uppercase;
+            border: 2px solid $brand-yellow-70;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                border: 2px solid $brand-blue-primary;
+                background-color: transparent;
+            }
+        }
+    }
+    .transfer-container,
+    .confirmation-container {
+        display: flex;
+        background-color: $brand-blue-secondary;
+
+        align-items: center;
+        padding: 3.2rem 2rem;
+        border: 1px solid $brand-gray;
+        margin-top: 2rem;
+        border-radius: 5px;
+        img {
+            padding-right: 1.2rem;
+        }
+        h4 {
+            font-size: 1.8rem;
+            font-weight: $bold;
+        }
+        span {
+            font-size: 1.4rem;
+            color: $brand-gray-primary;
+        }
+    }
+}
+
+.day-of-week,
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    box-sizing: border-box;
+    grid-gap: 0.2rem;
+    justify-items: center;
+    button {
+        background-color: transparent;
+        width: 100%;
+    }
+}
+.date-grid button:first-child {
+    grid-column: 3;
+}
+
+@include responsive(1280px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@include responsive(1165px) {
+    .reserva {
+        .container {
+            display: grid;
+            grid-template-columns: 60% 40rem;
+        }
+        .reserva-price-content {
+            a {
+                font-size: 1.6rem;
+            }
+        }
+
+        .horario-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start !important;
+            span {
+                padding-bottom: 1.6rem;
+            }
+        }
+    }
+}
+@include responsive(960px) {
+    .reserva {
+        .container {
+            display: grid;
+            grid-template-columns: 50% 44.8rem;
+        }
+    }
+}
+@include responsive(860px) {
+    .reserva {
+        .container {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 100%;
+            justify-content: center;
+            .info-reserva-left {
+                margin: 0;
+                .reserva-slide-container {
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive(414px) {
+    .br-container-main-reserva {
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+    .reserva {
+        .reserva-price-content {
+            flex-direction: column;
+            align-items: flex-start;
+            .price-content {
+                padding-bottom: 1.6rem;
+            }
+        }
+        .add-to-cart-container {
+            button {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

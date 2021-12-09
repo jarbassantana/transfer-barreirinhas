@@ -9,6 +9,7 @@ export default function initScroll() {
 function initScrollTop(event) {
     event.preventDefault()
     const href = event.currentTarget.getAttribute('href')
+    console.log(href)
     const section = document.querySelector(href)
     const topo = section.offsetTop
     window.scrollTo({

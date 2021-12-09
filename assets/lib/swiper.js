@@ -40,9 +40,12 @@ var tripSwiper = new Swiper('.trips-slide', {
 })
 
 const trip = document.querySelector('.trips-slide')
-;['mouseenter', 'mouseleave'].forEach(useEvent => {
-    trip.addEventListener(useEvent, handlePlay)
-})
+if (trip) {
+    ;['mouseenter', 'mouseleave'].forEach(useEvent => {
+        trip.addEventListener(useEvent, handlePlay)
+    })
+}
+
 function handlePlay(event) {
     if (event.type === 'mouseenter') {
         this.swiper.autoplay.stop()
@@ -110,4 +113,12 @@ var toursSwiper = new Swiper('.mySwiperTours', {
     spaceBetween: 30,
     centeredSlides: false,
     grabCursor: true
+})
+
+var swiperReserva = new Swiper('.reserva-slide', {
+    grabCursor: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
 })

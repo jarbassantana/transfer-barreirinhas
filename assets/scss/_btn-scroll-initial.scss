@@ -1,0 +1,30 @@
+.btn-ScrollInitial {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 5px;
+    border: 1px solid $brand-blue-primary;
+    background-color: $brand-blue-primary;
+    cursor: pointer;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: none;
+    i {
+        color: $brand-white;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $brand-blue-primary;
+        i {
+            color: $brand-blue-primary;
+        }
+    }
+}
+
+.btn-ScrollInitial.active {
+    transition: 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+}

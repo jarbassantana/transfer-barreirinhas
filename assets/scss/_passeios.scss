@@ -19,7 +19,7 @@
             font-size: 2.4rem;
             line-height: 120%;
             font-weight: $regular;
-            color: $brand-white;
+            color: $brand-gray;
             margin: 0 auto;
             text-align: center;
         }
@@ -179,7 +179,6 @@
         list-style: none;
         gap: 1rem;
         padding-top: 7.4rem;
-        padding-bottom: 12rem;
         li {
             padding: 1rem 1.5rem;
             border: 1px solid $brand-black;
@@ -245,8 +244,51 @@ html {
         grid-auto-flow: row;
     }
 }
+@include responsive(630px) {
+    .br-container-main {
+        flex-direction: column;
+        gap: 3.2rem;
+        .br-title-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h2 {
+                font-size: 3.2rem;
+                line-height: 120%;
+                font-weight: $bold;
+            }
+            span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
 
 @include responsive(410px) {
+    .bg-top-section {
+        .container {
+            h1 {
+                font-size: 3.2rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .br-container-main {
+        flex-direction: column;
+        gap: 3.2rem;
+        .br-title-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            h2 {
+                font-size: 2.4rem;
+                line-height: 120%;
+                font-weight: $bold;
+            }
+        }
+    }
     .br-passeios-card {
         .br-passeios-content-card {
             padding: 2rem 2rem;
