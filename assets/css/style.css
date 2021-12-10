@@ -2353,6 +2353,7 @@ header .brand-transfer {
   -webkit-filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
           filter: drop-shadow(0px 2px 40px rgba(119, 119, 119, 0.25));
   background-color: #f2f5fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .br-passeios-card .br-passeios-img-content {
