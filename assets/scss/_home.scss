@@ -438,6 +438,7 @@
         position: relative;
         right: -6%;
         display: flex;
+        cursor: pointer;
         .thumb-video {
             box-sizing: border-box;
             max-width: 49rem;
@@ -512,6 +513,51 @@
 
 // ================================== MEDIA QUERIES - HOME =============================== //
 @import "_mixins";
+.modal-container {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    cursor: unset;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.294);
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    .modal-overlay {
+        width: 90%;
+        background-color: $brand-white;
+        height: 90%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 8px;
+
+        div {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+        }
+        i {
+            position: absolute;
+            right: -1rem;
+            top: -1rem;
+            padding: 0.9rem 1.2rem;
+            background-color: $brand-blue-primary;
+            color: $brand-white;
+            border-radius: 50%;
+            font-size: 2.4rem;
+        }
+    }
+}
+.modal-container.active-modal {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
 
 @include responsive(1366px) {
     .tours {
@@ -859,6 +905,14 @@
             .tours-box-slide {
                 max-width: 31rem;
             }
+        }
+    }
+}
+@include responsive(768px) {
+    .modal-container {
+        .modal-overlay {
+            height: 100%;
+            max-height: 320px;
         }
     }
 }

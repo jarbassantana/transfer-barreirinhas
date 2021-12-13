@@ -170,3 +170,24 @@ header {
         }
     }
 }
+
+@import "_mixins";
+
+html {
+    @include responsive(1366px) {
+        font-size: 62.5%;
+        .bx {
+            &::after {
+                height: 0.2rem;
+            }
+        }
+    }
+    @include responsive(1280px) {
+        font-size: 62.5%;
+        .bx {
+            &::after {
+                height: 0.3rem;
+            }
+        }
+    }
+}

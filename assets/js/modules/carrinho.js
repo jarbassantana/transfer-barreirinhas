@@ -11,23 +11,25 @@ function grabButton() {
 
 function handleClick(event) {
     event.preventDefault()
-    const progressBar = document.querySelector('.border-progress-bar')
-    const checkList = document.querySelector('.checklist-2')
-    const formContainer = document.querySelector('.cart-form-container')
-    const cartContainer = document.querySelector('.cart-confirm-container')
-    const infoPeople = document.querySelector('.edit-cart-container')
-    const btnPrimary = document.getElementById('cart-salvar')
-    const btnPagamento = document.getElementById('pagamento')
-
-    formContainer.style.display = 'none'
-
-    infoPeople.classList.add('add-edit')
-    btnPrimary.style.display = 'none'
-    btnPagamento.style.display = 'flex'
-    cartContainer.style.justifyContent = 'space-between'
-    cartContainer.style.paddingTop = '0'
-    progressBar.classList.add('active')
-    setInterval(() => {
-        checkList.classList.add('active')
-    }, 600)
+    const variaveisFunc = {
+        progressBar: document.querySelector('.border-progress-bar'),
+        checkList: document.querySelector('.border-progress-bar'),
+        formContainer: document.querySelector('.cart-form-container'),
+        cartContainer: document.querySelector('.cart-confirm-container'),
+        infoPeople: document.querySelector('.edit-cart-container'),
+        btnPrimary: document.getElementById('cart-salvar'),
+        btnPagamento: document.getElementById('pagamento')
+    }
+    if (variaveisFunc) {
+        variaveisFunc.formContainer.style.display = 'none'
+        variaveisFunc.infoPeople.classList.add('add-edit')
+        variaveisFunc.btnPrimary.style.display = 'none'
+        variaveisFunc.btnPagamento.style.display = 'flex'
+        variaveisFunc.cartContainer.style.justifyContent = 'space-between'
+        variaveisFunc.cartContainer.style.paddingTop = '0'
+        variaveisFunc.progressBar.classList.add('active')
+        setInterval(() => {
+            variaveisFunc.checkList.classList.add('active')
+        }, 600)
+    }
 }

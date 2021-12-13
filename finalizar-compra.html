@@ -4,20 +4,547 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="refresh" content="10; URL='index.html'" />
         <title>Transfer Barreirinhas | Finalizar Compra</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/all.min.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/fontawesome.min.css" /> -->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     </head>
-    <body
-        style="
-            height: 100vh;
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Lato', sans-serif;
-        "
-    >
-        <h1>Página em construção</h1>
+    <body>
+        <header>
+            <!-- ============= NAVBAR MOBILE ============= -->
+            <nav class="navbar-mobile container">
+                <div class="bx" id="bx"></div>
+                <a href="index.html" class="logo">
+                    <img
+                        src="./assets/img/logo-transfer-barreirinhas.png"
+                        alt="logo transfer barreirinhas mobile"
+                    />
+                </a>
+            </nav>
+
+            <nav class="container d-flex navbar-desktop">
+                <a href="index.html">
+                    <img
+                        class="brand-transfer"
+                        src="./assets/img/logo-transfer-barreirinhas.png"
+                        alt="Logo Transfer Barreirinhas"
+                    />
+                </a>
+                <div>
+                    <ul class="d-flex flex-ul">
+                        <li><a href="barreirinhas.html">Barreirinhas</a></li>
+                        <li><a href="sao-luis.html">São Luís</a></li>
+                        <li><a href="#">Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="btn-header-container d-flex">
+                    <a class="btn btn-secondary" href="login.html">Entrar</a>
+                    <a class="btn btn-primary" href="#">Cadastre-se</a>
+
+                    <span class="icon-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </nav>
+            <!-- ============= MENU MOBILE ============= -->
+            <nav class="container menu-mobile" id="menu-mobile">
+                <ul class="nav-list-mobile">
+                    <li>
+                        <a href="barreirinhas.html" class="nav-link-mobile"
+                            >Barreirinhas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="sao-luis.html" class="nav-link-mobile"
+                            >São Luís</a
+                        >
+                    </li>
+                    <li><a href="" class="nav-link-mobile">Contato</a></li>
+                </ul>
+                <div class="btn-container-mobile">
+                    <a class="btn btn-secondary" href="login.html">Entrar</a>
+                    <a class="btn btn-primary" href="#">Cadastre-se</a>
+                    <span class="icon-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </div>
+            </nav>
+        </header>
+
+        <section class="cart">
+            <div class="container">
+                <div class="checklist-content">
+                    <div class="checklist-icon">
+                        <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="checklist-1"
+                        >
+                            <path
+                                d="M20 3.33337C10.81 3.33337 3.33333 10.81 3.33333 20C3.33333 29.19 10.81 36.6667 20 36.6667C29.19 36.6667 36.6667 29.19 36.6667 20C36.6667 10.81 29.19 3.33337 20 3.33337ZM20 33.3334C12.6483 33.3334 6.66667 27.3517 6.66667 20C6.66667 12.6484 12.6483 6.66671 20 6.66671C27.3517 6.66671 33.3333 12.6484 33.3333 20C33.3333 27.3517 27.3517 33.3334 20 33.3334Z"
+                                fill="#36bc33"
+                            />
+                            <path
+                                d="M16.665 22.645L12.8334 18.82L10.48 21.18L16.6684 27.355L27.845 16.1783L25.4884 13.8217L16.665 22.645Z"
+                                fill="#36bc33"
+                            />
+                        </svg>
+                    </div>
+                    <span class="border-checklist-1">
+                        <div class="border-progress-bar"></div>
+                    </span>
+                    <div class="checklist-icon">
+                        <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="checklist-2"
+                        >
+                            <path
+                                d="M20 3.33337C10.81 3.33337 3.33333 10.81 3.33333 20C3.33333 29.19 10.81 36.6667 20 36.6667C29.19 36.6667 36.6667 29.19 36.6667 20C36.6667 10.81 29.19 3.33337 20 3.33337ZM20 33.3334C12.6483 33.3334 6.66667 27.3517 6.66667 20C6.66667 12.6484 12.6483 6.66671 20 6.66671C27.3517 6.66671 33.3333 12.6484 33.3333 20C33.3333 27.3517 27.3517 33.3334 20 33.3334Z"
+                                fill="#36bc33"
+                            />
+                            <path
+                                d="M16.665 22.645L12.8334 18.82L10.48 21.18L16.6684 27.355L27.845 16.1783L25.4884 13.8217L16.665 22.645Z"
+                                fill="#36bc33"
+                            />
+                        </svg>
+                    </div>
+                    <span class="border-checklist-2">
+                        <div class="border-progress-bar"></div>
+                    </span>
+                    <div class="checklist-icon">
+                        <svg
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="checklist-2"
+                        >
+                            <path
+                                d="M20 3.33337C10.81 3.33337 3.33333 10.81 3.33333 20C3.33333 29.19 10.81 36.6667 20 36.6667C29.19 36.6667 36.6667 29.19 36.6667 20C36.6667 10.81 29.19 3.33337 20 3.33337ZM20 33.3334C12.6483 33.3334 6.66667 27.3517 6.66667 20C6.66667 12.6484 12.6483 6.66671 20 6.66671C27.3517 6.66671 33.3333 12.6484 33.3333 20C33.3333 27.3517 27.3517 33.3334 20 33.3334Z"
+                                fill="#7A7A7A"
+                            />
+                            <path
+                                d="M16.665 22.645L12.8334 18.82L10.48 21.18L16.6684 27.355L27.845 16.1783L25.4884 13.8217L16.665 22.645Z"
+                                fill="#7A7A7A"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout">
+            <div class="container">
+                <div class="checkout-content-left">
+                    <h4 class="checkout-info-title">Pagamento</h4>
+                    <div class="checkout-info-container">
+                        <h5>Dados pessoais</h5>
+                        <form action="">
+                            <div class="checkout-input-container">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id=""
+                                    placeholder="Digite seu nome completo"
+                                    aria-label="Digite seu nome completo"
+                                />
+                            </div>
+                            <div class="checkout-input-container">
+                                <input
+                                    type="number"
+                                    name="number"
+                                    id=""
+                                    placeholder="Digite seu cpf"
+                                    aria-label="Digite seu cpf"
+                                />
+                            </div>
+                            <div class="checkout-input-container">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id=""
+                                    placeholder="Digite seu e-mail"
+                                    aria-label="Digite seu e-mail"
+                                />
+                            </div>
+                            <div class="checkout-input-container">
+                                <input
+                                    type="tel"
+                                    name="tel"
+                                    id=""
+                                    placeholder="11 99999-9999"
+                                    aria-label="11 99999-9999"
+                                />
+                            </div>
+                        </form>
+                        <div class="method-pay-container">
+                            <span>Você está pagando com o Rede</span>
+                            <ul class="rodape-content-pagamento">
+                                <li>
+                                    <img
+                                        src="./assets/img/boleto.svg"
+                                        alt="icon boleto"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/elo.svg"
+                                        alt="icon elo"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/hipercard.svg"
+                                        alt="icon hipercard"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/mastercard.svg"
+                                        alt="icon mastercard"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/visa.svg"
+                                        alt="icon visa"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/bb.svg"
+                                        alt="icon bb"
+                                    />
+                                </li>
+                                <li>
+                                    <img
+                                        src="./assets/img/caixa.svg"
+                                        alt="icon caixa"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="checkout-data-payment-container">
+                        <h5>Insira seus dados de pagamento</h5>
+                        <div class="checkbox-container">
+                            <input
+                                type="checkbox"
+                                name="check-titular"
+                                id="check-titular"
+                            />
+                            <label for="check-titular"
+                                >Não sou o titular do cartão</label
+                            >
+                        </div>
+                        <form action="">
+                            <div class="checkout-payment-content-1">
+                                <div class="number-card-container">
+                                    <label for="number-card"
+                                        >Número do cartão de crédito:</label
+                                    >
+                                    <div class="number-card-content">
+                                        <div class="container-img-card">
+                                            <img
+                                                src="./assets/img/bi_credit-card.svg"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="number-card"
+                                            placeholder="0000 - 0000 - 0000 - 0000"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="name-card-container">
+                                    <label for="name-card"
+                                        >Titular do cartão:</label
+                                    >
+                                    <div class="name-card-content">
+                                        <div class="container-img-card">
+                                            <img
+                                                src="./assets/img/user.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name=""
+                                            id="name-card"
+                                            placeholder="Nome impresso no cartão"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-payment-content-2">
+                                <div class="validate-container">
+                                    <label for="validate">Validade:</label>
+                                    <div class="validate-card-content">
+                                        <div
+                                            class="validate-container-img-card"
+                                        >
+                                            <img
+                                                src="./assets/img/bi_credit-card.svg"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="validate"
+                                            placeholder="mm/aaaa"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="cod-sec-container">
+                                    <label for="cod-sec">Cód. Segurança:</label>
+                                    <div class="cod-card-content">
+                                        <div class="cod-container-img-card">
+                                            <img
+                                                src="./assets/img/ant-design_credit-card-filled.svg"
+                                                alt=""
+                                            />
+                                        </div>
+
+                                        <input
+                                            type="number"
+                                            name=""
+                                            id="cod-sec"
+                                            placeholder="000"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="parcel-container">
+                                    <label for="parcel"
+                                        >Número de parcelas:</label
+                                    >
+                                    <select name="" id="parcel">
+                                        <optgroup>
+                                            <option value="" selected disabled>
+                                                Selecione uma opção
+                                            </option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="terms-container">
+                            <h4>Termos de Uso</h4>
+                            <div class="terms-checkbox-container">
+                                <input
+                                    type="checkbox"
+                                    name="terms-check"
+                                    id="terms-check"
+                                />
+                                <label for="terms-check"
+                                    >Li e aceito as condições dos termos de uso
+                                    e política de privacidade.</label
+                                >
+                            </div>
+                        </div>
+                        <div class="checkout-btn-container">
+                            <a href="#">Finalizar Compra</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-content-right">
+                    <h4>Resumo da sua compra</h4>
+                    <div class="checkout-container-info__purchase">
+                        <div class="edit-purchase-container">
+                            <span>Compras</span>
+                            <button>
+                                Editar compras<i class="far fa-edit"></i>
+                            </button>
+                        </div>
+                        <div class="checkout-info-purchase-container">
+                            <img
+                                src="./assets/img/destino-2.jpg"
+                                alt="imagem checkout passeio"
+                            />
+                            <div class="checkout-info-purchase-content">
+                                <h5>LENÇÓIS (CIRCUITO LAGOA AZUL)</h5>
+                                <div class="checkout-date-and-hour">
+                                    <span
+                                        ><i class="far fa-calendar-check"></i
+                                        >27/12/2022</span
+                                    >
+                                    <span
+                                        ><i class="fas fa-clock"></i>08:00 até
+                                        15:00</span
+                                    >
+                                </div>
+                                <span class="checkout-price"
+                                    >1x Adulto - R$ 79,90</span
+                                >
+                            </div>
+                        </div>
+                        <div class="subtotal-container">
+                            <span>Subtotal:</span>
+                            <span>R$ 99,00</span>
+                        </div>
+                        <div class="cupom-container">
+                            <input
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Cupom de desconto"
+                                aria-label="Cupom de desconto"
+                            />
+                            <button>Aplicar</button>
+                        </div>
+                        <div class="total-container">
+                            <span>Total:</span>
+                            <span>R$ 99,00</span>
+                        </div>
+                    </div>
+                    <div class="atencao-container">
+                        <img src="./assets/img/lock.svg" alt="" />
+                        <p>
+                            Ambiente Seguro. As informações de seu cartão de
+                            crédito não ficam armazenadas em nossos servidores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter container">
+            <div class="newsletter-container">
+                <h3>
+                    Digite o seu e-mail para receber novidades e passeios
+                    ineditos
+                </h3>
+                <p>
+                    Digite o seu e-mail para receber novidades e passeios
+                    ineditos
+                </p>
+                <form action="">
+                    <input
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="Digite seu e-mail para receber mais novidades"
+                    />
+                    <button type="submit">Inscreva-se</button>
+                </form>
+            </div>
+        </section>
+        <footer class="rodape container">
+            <div class="rodape-container">
+                <div class="rodape-content-card">
+                    <img
+                        src="./assets/img/logo-transfer-barreirinhas.png"
+                        alt=""
+                    />
+                    <p class="rodape-subtitle">
+                        Incididunt anim amet do officia dolore aliquip ut duis
+                        occaecat.
+                    </p>
+                    <div class="rodape-social-content">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="rodape-content-card">
+                    <h3>Pagamento</h3>
+                    <div class="rodape-container-pagamento">
+                        <p>Meios de pagamento</p>
+                        <ul class="rodape-content-pagamento">
+                            <li>
+                                <img
+                                    src="./assets/img/boleto.svg"
+                                    alt="icon boleto"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./assets/img/elo.svg"
+                                    alt="icon elo"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./assets/img/hipercard.svg"
+                                    alt="icon hipercard"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./assets/img/mastercard.svg"
+                                    alt="icon mastercard"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./assets/img/visa.svg"
+                                    alt="icon visa"
+                                />
+                            </li>
+                            <li>
+                                <img src="./assets/img/bb.svg" alt="icon bb" />
+                            </li>
+                            <li>
+                                <img
+                                    src="./assets/img/caixa.svg"
+                                    alt="icon caixa"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rodape-content-card">
+                    <h3>Páginas</h3>
+                    <ul class="rodape-links-uteis">
+                        <li>Login</li>
+                        <li>Cadastro</li>
+                        <li>Barreirinhas</li>
+                        <li>São Luís</li>
+                        <li>Reservas</li>
+                    </ul>
+                </div>
+                <div class="rodape-content-card">
+                    <h3>Atendimento</h3>
+                    <ul class="rodape-contato">
+                        <li><i class="fab fa-whatsapp"></i>(98) 98879-5186</li>
+                        <li><i class="fas fa-phone"></i>(98) 3042-1400</li>
+                        <li>
+                            <i class="far fa-envelope"></i
+                            >vendas@transferbarreirinhas.com
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>Das 8:00 as 18:00, 7
+                            dias por semana
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-container container">
+                <p>
+                    TransferBarreirinhas.com © 2018-2021 - Todos os direitos
+                    reservados
+                </p>
+            </div>
+        </footer>
+        <div class="btn-ScrollInitial">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <script type="module" src="./assets/js/script.js"></script>
     </body>
 </html>
