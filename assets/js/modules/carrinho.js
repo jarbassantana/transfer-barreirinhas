@@ -18,7 +18,8 @@ function handleClick(event) {
         cartContainer: document.querySelector('.cart-confirm-container'),
         infoPeople: document.querySelector('.edit-cart-container'),
         btnPrimary: document.getElementById('cart-salvar'),
-        btnPagamento: document.getElementById('pagamento')
+        btnPagamento: document.getElementById('pagamento'),
+        svg: document.querySelector('.checklist-2')
     }
     if (variaveisFunc) {
         variaveisFunc.formContainer.style.display = 'none'
@@ -27,9 +28,10 @@ function handleClick(event) {
         variaveisFunc.btnPagamento.style.display = 'flex'
         variaveisFunc.cartContainer.style.justifyContent = 'space-between'
         variaveisFunc.cartContainer.style.paddingTop = '0'
-        variaveisFunc.progressBar.classList.add('active')
+        variaveisFunc.progressBar.classList.add('active-check')
+        variaveisFunc.svg.classList.add('active-check')
         setInterval(() => {
-            variaveisFunc.checkList.classList.add('active')
+            variaveisFunc.checkList.classList.add('active-check')
         }, 600)
     }
 }

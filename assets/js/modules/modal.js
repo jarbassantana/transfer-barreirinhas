@@ -5,8 +5,10 @@ export default function initModal() {
 function handleClick() {
     const videoModal = document.querySelector('.tours-content-video')
     const closeModal = document.getElementById('close-modal')
-    videoModal.addEventListener('click', activeModal)
-    closeModal.addEventListener('click', removeModal)
+    if (videoModal && closeModal) {
+        videoModal.addEventListener('click', activeModal)
+        closeModal.addEventListener('click', removeModal)
+    }
 }
 
 function activeModal(event) {

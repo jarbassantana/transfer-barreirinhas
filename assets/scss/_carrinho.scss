@@ -14,18 +14,18 @@
                 fill: #36bc33;
             }
         }
-        .checklist-2.active {
+        .checklist-2.active-check {
             path {
                 fill: #36bc33;
             }
         }
-        .border-checklist-1 {
+        .border-checklist-1.active-check {
             height: 2px;
             background-color: $brand-black;
             max-width: 26.6rem;
             width: 100%;
             position: relative;
-            .border-progress-bar.active {
+            .border-progress-bar.active-check {
                 position: absolute;
                 height: 2px;
                 top: 0;
