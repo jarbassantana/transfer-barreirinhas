@@ -11,11 +11,13 @@ function initalScroll() {
 
 function detectScroll(event) {
     const btnScrollHome = document.querySelector('.btn-ScrollInitial')
-    const scrollY = window.pageYOffset
-    if (scrollY >= 200) {
-        btnScrollHome.classList.add('active')
-    } else if (scrollY <= 0) {
-        btnScrollHome.classList.remove('active')
+    if (btnScrollHome) {
+        const scrollY = window.pageYOffset
+        if (scrollY >= 200) {
+            btnScrollHome.classList.add('active')
+        } else if (scrollY <= 0) {
+            btnScrollHome.classList.remove('active')
+        }
     }
 }
 function scrollHome(event) {
